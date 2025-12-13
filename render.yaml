@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: game-night-server
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URL
+        sync: false
+      - key: MONGO_DB
+        value: game-night
+      - key: PORT
+        value: 4000

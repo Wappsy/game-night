@@ -1,0 +1,7 @@
+nixpacks:
+  phases:
+    install:
+      cmds:
+        - npm install
+    start:
+      cmd: node server.js
