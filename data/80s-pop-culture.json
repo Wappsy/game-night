@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "category": "80s Pop Culture",
+    "version": "0.1.0",
+    "total": 30,
+    "topics": ["Movies", "Music", "TV", "Tech", "Sports", "Fashion"],
+    "difficulty": ["easy", "medium", "hard"]
+  },
+  "questions": [
+    {
+      "id": "80s-Movies-back-to-the-future-release",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "In what year was 'Back to the Future' first released?",
+      "choices": ["1983", "1985", "1987", "1989"],
+      "correctIndex": 1,
+      "source": "Universal Pictures release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Movies-ghostbusters-tagline-who-you-gonna-call",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Which film popularized the catchphrase 'Who you gonna call?'",
+      "choices": ["Gremlins", "Ghostbusters", "The Goonies", "Beetlejuice"],
+      "correctIndex": 1,
+      "source": "Columbia Pictures marketing",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Movies-top-gun-maverick-callsign",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "What is the callsign of Tom Cruise's character in 'Top Gun' (1986)?",
+      "choices": ["Iceman", "Viper", "Maverick", "Goose"],
+      "correctIndex": 2,
+      "source": "Paramount Pictures — character names",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Movies-the-terminator-quote-ill-be-back",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Which 1984 sci-fi film features the famous line 'I'll be back'?",
+      "choices": ["Blade Runner", "The Terminator", "Aliens", "RoboCop"],
+      "correctIndex": 1,
+      "source": "Orion/Universal — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Movies-ET-director",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Who directed 'E.T. the Extra-Terrestrial'?",
+      "choices": ["George Lucas", "Steven Spielberg", "James Cameron", "Ridley Scott"],
+      "correctIndex": 1,
+      "source": "Universal Pictures credits",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-Music-michael-jackson-thriller-release-year",
+      "category": "80s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Michael Jackson's album 'Thriller' was released in which year?",
+      "choices": ["1980", "1982", "1984", "1986"],
+      "correctIndex": 1,
+      "source": "Epic Records release dates",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Music-madonna-like-a-virgin-artist",
+      "category": "80s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Who performed the 1984 hit 'Like a Virgin'?",
+      "choices": ["Cyndi Lauper", "Madonna", "Whitney Houston", "Debbie Harry"],
+      "correctIndex": 1,
+      "source": "Sire Records artist discography",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Music-u2-the-joshua-tree-year",
+      "category": "80s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "U2 released 'The Joshua Tree' in what year?",
+      "choices": ["1985", "1986", "1987", "1988"],
+      "correctIndex": 2,
+      "source": "Island Records releases",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Music-prince-purple-rain-film-city",
+      "category": "80s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "The film 'Purple Rain' is set in which U.S. city?",
+      "choices": ["Detroit", "Minneapolis", "Chicago", "Los Angeles"],
+      "correctIndex": 1,
+      "source": "Film setting — Minneapolis music scene",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-TV-miami-vice-leads",
+      "category": "80s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which duo starred as undercover detectives on 'Miami Vice'?",
+      "choices": ["Mulder & Scully", "Crockett & Tubbs", "Starsky & Hutch", "Riggs & Murtaugh"],
+      "correctIndex": 1,
+      "source": "NBC series cast",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-TV-family-ties-alex-p-keaton-actor",
+      "category": "80s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which actor played Alex P. Keaton on 'Family Ties'?",
+      "choices": ["Michael J. Fox", "Kirk Cameron", "Scott Baio", "Ralph Macchio"],
+      "correctIndex": 0,
+      "source": "Series credits",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-TV-the-golden-girls-setting-city",
+      "category": "80s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "'The Golden Girls' is primarily set in which city?",
+      "choices": ["Los Angeles", "Miami", "New York", "Phoenix"],
+      "correctIndex": 1,
+      "source": "Show setting",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-Tech-walkman-brand",
+      "category": "80s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which company popularized the portable cassette player 'Walkman'?",
+      "choices": ["Panasonic", "Sony", "Philips", "Sharp"],
+      "correctIndex": 1,
+      "source": "Sony product history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Tech-cd-introduction-year",
+      "category": "80s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Compact Discs (CDs) were first commercially introduced in which year?",
+      "choices": ["1980", "1982", "1984", "1986"],
+      "correctIndex": 1,
+      "source": "Philips/Sony CD history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Tech-nintendo-nes-us-release",
+      "category": "80s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "The Nintendo Entertainment System (NES) launched widely in the U.S. in what year?",
+      "choices": ["1983", "1985", "1986", "1988"],
+      "correctIndex": 1,
+      "source": "Nintendo launch timeline",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-Sports-miracle-on-ice-opponent",
+      "category": "80s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "In the 1980 'Miracle on Ice', the U.S. hockey team defeated which country?",
+      "choices": ["Canada", "Soviet Union", "Sweden", "Finland"],
+      "correctIndex": 1,
+      "source": "1980 Winter Olympics records",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Sports-chicago-bulls-draft-michael-jordan-year",
+      "category": "80s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "In which year did the Chicago Bulls draft Michael Jordan?",
+      "choices": ["1982", "1984", "1986", "1988"],
+      "correctIndex": 1,
+      "source": "NBA draft history",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-Fashion-shoulder-pads-trend",
+      "category": "80s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "easy",
+      "prompt": "Which bold clothing feature became a hallmark of 80s power dressing?",
+      "choices": ["Shoulder pads", "Bell bottoms", "Peplum", "Corsets"],
+      "correctIndex": 0,
+      "source": "Fashion retrospectives",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Fashion-members-only-jacket",
+      "category": "80s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "medium",
+      "prompt": "'Members Only' refers to which popular 80s apparel item?",
+      "choices": ["Sneakers", "Jackets", "Jeans", "Hats"],
+      "correctIndex": 1,
+      "source": "Brand/product history",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "80s-Movies-gremlins-director",
+      "category": "80s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "hard",
+      "prompt": "Who directed the 1984 dark comedy-horror film 'Gremlins'?",
+      "choices": ["Joe Dante", "Tim Burton", "John Landis", "Ivan Reitman"],
+      "correctIndex": 0,
+      "source": "Film credits",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Music-new-order-blue-monday-format",
+      "category": "80s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "'Blue Monday' by New Order was notable for its original single release format. Which was it?",
+      "choices": ["MiniDisc", "12-inch vinyl", "Cassette single", "CD single"],
+      "correctIndex": 1,
+      "source": "Factory Records release details",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-TV-twin-peaks-premiere-year",
+      "category": "80s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "David Lynch's 'Twin Peaks' first premiered in what year (U.S.)?",
+      "choices": ["1989", "1990", "1988", "1987"],
+      "correctIndex": 1,
+      "source": "ABC broadcast records (note: premiere 1990)",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Tech-apple-macintosh-launch-year",
+      "category": "80s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "Apple introduced the original Macintosh in which year?",
+      "choices": ["1983", "1984", "1985", "1986"],
+      "correctIndex": 1,
+      "source": "Apple product timeline",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Sports-diego-maradona-hand-of-god-year",
+      "category": "80s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "In which year did Diego Maradona score the 'Hand of God' goal?",
+      "choices": ["1984", "1986", "1988", "1990"],
+      "correctIndex": 1,
+      "source": "FIFA World Cup 1986",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "80s-Fashion-air-jordan-1-year",
+      "category": "80s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "hard",
+      "prompt": "Nike released the Air Jordan 1 in which year?",
+      "choices": ["1984", "1985", "1986", "1987"],
+      "correctIndex": 1,
+      "source": "Sneaker release archives",
+      "media": {"image": null, "audio": null}
+    }
+  ]
+}

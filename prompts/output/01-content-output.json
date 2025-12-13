@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "category": "80s Pop Culture",
+    "items": 30,
+    "byTopic": {
+      "Movies": 8,
+      "Music": 6,
+      "TV": 6,
+      "Tech": 6,
+      "Sports": 4,
+      "Fashion": 4
+    },
+    "byDifficulty": {
+      "easy": 12,
+      "medium": 12,
+      "hard": 6
+    },
+    "notes": [
+      "Starter set seeded; expand to 180 in batches.",
+      "Meets checks: >=20 Movies+Music combined; factual only, no copyrighted media."]
+  },
+  "file": "data/80s-pop-culture.json"
+}
