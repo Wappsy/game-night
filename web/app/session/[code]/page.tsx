@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
 import { AudioManager } from '@/lib/audio';
+import { Offcanvas } from '@/components/Offcanvas';
 
 export default function SessionPage({ params }: { params: { code: string } }) {
   const [connected, setConnected] = useState(false);
@@ -29,6 +30,7 @@ export default function SessionPage({ params }: { params: { code: string } }) {
   const [infoMsg, setInfoMsg] = useState('');
   const [resumed, setResumed] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -151,111 +153,45 @@ export default function SessionPage({ params }: { params: { code: string } }) {
 
   return (
     <main style={{ padding: 24 }}>
-      <h1 className="title">Lobby / Session {params.code}</h1>
-      <p>Round: {round}</p>
-      <p>Status: {connected ? 'Connected' : 'Connecting...'}</p>
-      {loadingState && <p className="muted">Loading session state…</p>}
-      {infoMsg && <p className="muted" style={{ color: 'var(--neon)' }}>{infoMsg}</p>}
-
-      <div style={{ marginBottom: 12 }}>
-        <label className="row">
-          <span>Sound Effects</span>
-          <input type="checkbox" checked={sfx} onChange={() => { setSfx(v => !v); sfxRef.current = !sfxRef.current; audio?.toggle(); }} />
-        </label>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+        <h1 className="title">Lobby / Session {params.code} </h1>
+        <button onClick={() => setSettingsOpen(true)}>Settings</button>
       </div>
+      
+      <p>Round: {round}</p>
 
       <section>
-        <h2>Players</h2>
-        {isHost && (
-          <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
-            <button onClick={async () => {
-              if (!navigator?.clipboard) {
-                setInfoMsg('Clipboard unavailable');
-                setTimeout(() => setInfoMsg(''), 1200);
-                return;
-              }
-              const url = `${window.location.origin}/session/${params.code}`;
-              await navigator.clipboard.writeText(url);
-              setInfoMsg('Invite link copied');
-              setTimeout(() => setInfoMsg(''), 1200);
-            }}>Copy Invite Link</button>
-            {question && correctIndex === null && (
-              <button onClick={async () => {
-                const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
-                await fetch(`${api}/api/sessions/${params.code}/question/end`, { method: 'POST' });
-              }} style={{ background: 'var(--accent)', border: '1px solid var(--neon)' }}>End Question Now</button>
-            )}
-          </div>
-        )}
-        {teams.length > 0 && (
-          <div style={{ marginBottom: 12 }}>
-            {teams.map((t) => (
-              <div key={t.name} style={{ marginBottom: 6, display: 'flex', justifyContent: 'space-between', maxWidth: 380 }}>
-                <strong style={{ color: 'var(--neon)' }}>{t.name}</strong>
-                <span className="muted">{t.count} player{t.count !== 1 ? 's' : ''}</span>
-              </div>
-            ))}
-          </div>
-        )}
-        <ul>
-          {players.map((p: any, idx: number) => {
-            const nameVal = typeof p === 'string' ? p : p.name;
-            const teamVal = typeof p === 'string' ? undefined : p.teamName;
+          <h2>Leaderboard</h2>
+          {Object.keys(teamScores).length === 0 && <p className="muted">No scores yet.</p>}
+          {Object.keys(teamScores).length > 0 && (() => {
+            const sorted = Object.entries(teamScores).sort((a, b) => b[1] - a[1]);
+            const topScore = Math.max(...sorted.map(([, v]) => v), 1);
             return (
-              <li key={idx} style={{ display: 'flex', justifyContent: 'space-between', maxWidth: 420, gap: 8 }}>
-                <span>{nameVal}</span>
-                {teamVal && <span style={{ padding: '2px 8px', borderRadius: 12, border: '1px solid var(--neon)', color: 'var(--neon)', fontSize: 12 }}>{teamVal}</span>}
-              </li>
+              <ul style={{ maxWidth: '100%' }}>
+                {sorted.map(([team, pts], idx) => {
+                  const pct = Math.max(6, Math.round((pts / topScore) * 100));
+                  return (
+                    <li key={team} style={{ marginBottom: 10 }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                        <span style={{ color: idx === 0 ? 'var(--neon)' : 'var(--text)' }}>{team}</span>
+                        <strong>{pts}</strong>
+                      </div>
+                      <div style={{ height: 10, background: 'var(--panel)', borderRadius: 999, overflow: 'hidden', border: '1px solid var(--border)' }}>
+                        <div style={{ width: `${pct}%`, height: '100%', background: idx === 0 ? 'var(--neon)' : 'var(--accent)', transition: 'width 0.3s ease' }} />
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
             );
-          })}
-        </ul>
-      </section>
-
-      <section>
-        <h2>Your Display Name</h2>
-        <input
-          value={name}
-          onChange={e => {
-            setName(e.target.value);
-            nameRef.current = e.target.value;
-            if (socketRef) {
-              socketRef.emit('name_update', { code: params.code, name: e.target.value });
-            }
-          }}
-          placeholder="Type your name"
-        />
-        <div style={{ marginTop: 8 }}>
-          <label>Team Name (optional)</label>
-          <input
-            value={teamInput}
-            onChange={e => setTeamInput(e.target.value)}
-            placeholder="Set or change your team"
-          />
-          <button style={{ marginTop: 6 }} disabled={!teamInput.trim()} onClick={() => {
-            if (!socketRef) return;
-            const next = teamInput.trim();
-            teamRef.current = next;
-            socketRef.emit('team_update', { code: params.code, teamName: next });
-            if (typeof window !== 'undefined') {
-              localStorage.setItem('game-night-profile', JSON.stringify({ name: nameRef.current || name, teamName: next }));
-            }
-          }}>Update Team</button>
-        </div>
-        <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-          {!question && !ended && (
-            <button onClick={async () => {
-              const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
-              await fetch(`${api}/api/sessions/${params.code}/start`, { method: 'POST' });
-            }}>Start Round</button>
+          })()}
+          {ended && (
+            <div style={{ marginTop: 16 }}>
+              <h3>Game Over</h3>
+              <p>Thanks for playing! Final scores above.</p>
+            </div>
           )}
-          {correctIndex !== null && isHost && (
-            <button onClick={async () => {
-              const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
-              await fetch(`${api}/api/sessions/${params.code}/round/next`, { method: 'POST' });
-            }}>Next Round</button>
-          )}
-        </div>
-      </section>
+        </section>
 
       {question && !ended && (
         <section className="panel">
@@ -294,38 +230,128 @@ export default function SessionPage({ params }: { params: { code: string } }) {
         </section>
       )}
 
-      <section>
-        <h2>Leaderboard</h2>
-        {Object.keys(teamScores).length === 0 && <p className="muted">No scores yet.</p>}
-        {Object.keys(teamScores).length > 0 && (() => {
-          const sorted = Object.entries(teamScores).sort((a, b) => b[1] - a[1]);
-          const topScore = Math.max(...sorted.map(([, v]) => v), 1);
-          return (
-            <ul style={{ maxWidth: 420 }}>
-              {sorted.map(([team, pts], idx) => {
-                const pct = Math.max(6, Math.round((pts / topScore) * 100));
-                return (
-                  <li key={team} style={{ marginBottom: 10 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
-                      <span style={{ color: idx === 0 ? 'var(--neon)' : 'var(--text)' }}>{team}</span>
-                      <strong>{pts}</strong>
-                    </div>
-                    <div style={{ height: 10, background: 'var(--panel)', borderRadius: 999, overflow: 'hidden', border: '1px solid var(--border)' }}>
-                      <div style={{ width: `${pct}%`, height: '100%', background: idx === 0 ? 'var(--neon)' : 'var(--accent)', transition: 'width 0.3s ease' }} />
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          );
-        })()}
-        {ended && (
-          <div style={{ marginTop: 16 }}>
-            <h3>Game Over</h3>
-            <p>Thanks for playing! Final scores above.</p>
-          </div>
+      {!question && !ended && (
+          <section>
+            <h2>Game Controls</h2>
+            <button onClick={async () => {
+              const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+              await fetch(`${api}/api/sessions/${params.code}/start`, { method: 'POST' });
+            }} style={{ width: '100%' }}>Start Round</button>
+          </section>
         )}
-      </section>
+
+      {/* Settings Offcanvas */}
+      <Offcanvas
+        isOpen={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+        title="Settings"
+        position="end"
+      >
+        <section>
+          <h2>Players</h2>
+          {isHost && (
+            <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
+              <button onClick={async () => {
+                if (!navigator?.clipboard) {
+                  setInfoMsg('Clipboard unavailable');
+                  setTimeout(() => setInfoMsg(''), 1200);
+                  return;
+                }
+                const url = `${window.location.origin}/session/${params.code}`;
+                await navigator.clipboard.writeText(url);
+                setInfoMsg('Invite link copied');
+                setTimeout(() => setInfoMsg(''), 1200);
+              }}>Copy Invite Link</button>
+              {question && correctIndex === null && (
+                <button onClick={async () => {
+                  const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+                  await fetch(`${api}/api/sessions/${params.code}/question/end`, { method: 'POST' });
+                }} style={{ background: 'var(--accent)', border: '1px solid var(--neon)' }}>End Question Now</button>
+              )}
+              
+            </div>
+          )}
+        
+          {teams.length > 0 && (
+            <div style={{ marginBottom: 12 }}>
+              {teams.map((t) => (
+                <div key={t.name} style={{ marginBottom: 6, display: 'flex', justifyContent: 'space-between', maxWidth: 380 }}>
+                  <strong style={{ color: 'var(--neon)' }}>{t.name}</strong>
+                  <span className="muted">{t.count} player{t.count !== 1 ? 's' : ''}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          <ul>
+            {players.map((p: any, idx: number) => {
+              const nameVal = typeof p === 'string' ? p : p.name;
+              const teamVal = typeof p === 'string' ? undefined : p.teamName;
+              return (
+                <li key={idx} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', maxWidth: 420, gap: 8 }}>
+                  <span>{nameVal}</span>
+                  {teamVal && <span style={{ padding: '2px 8px', borderRadius: 12, border: '1px solid var(--neon)', color: 'var(--neon)', fontSize: 12 }}>{teamVal}</span>}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+
+        {correctIndex !== null && isHost && (
+          <section>
+            <h2>Next Round</h2>
+            <button onClick={async () => {
+              const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+              await fetch(`${api}/api/sessions/${params.code}/round/next`, { method: 'POST' });
+            }} style={{ width: '100%' }}>Proceed to Next Round</button>
+          </section>
+        )}
+
+        <section>
+          <h2>Your Display Name</h2>
+          <input
+            value={name}
+            onChange={e => {
+              setName(e.target.value);
+              nameRef.current = e.target.value;
+              if (socketRef) {
+                socketRef.emit('name_update', { code: params.code, name: e.target.value });
+              }
+            }}
+            placeholder="Type your name"
+          />
+          <div style={{ marginTop: 8 }}>
+            <label>Team Name (optional)</label>
+            <input
+              value={teamInput}
+              onChange={e => setTeamInput(e.target.value)}
+              placeholder="Set or change your team"
+            />
+            <button style={{ marginTop: 6, width: '100%' }} disabled={!teamInput.trim()} onClick={() => {
+              if (!socketRef) return;
+              const next = teamInput.trim();
+              teamRef.current = next;
+              socketRef.emit('team_update', { code: params.code, teamName: next });
+              if (typeof window !== 'undefined') {
+                localStorage.setItem('game-night-profile', JSON.stringify({ name: nameRef.current || name, teamName: next }));
+              }
+            }}>Update Team</button>
+          </div>
+
+          <div style={{ marginTop: 12 }}>
+            <label className="row" style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <span>Sound Effects</span>
+              <input type="checkbox" checked={sfx} onChange={() => { setSfx(v => !v); sfxRef.current = !sfxRef.current; audio?.toggle(); }} />
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <h2>Status</h2>
+          <p>Connection: <strong>{connected ? '✓ Connected' : '⚠ Connecting...'}</strong></p>
+          {loadingState && <p className="muted">Loading session state…</p>}
+          {infoMsg && <p style={{ color: 'var(--neon)' }}>{infoMsg}</p>}
+        </section>
+      </Offcanvas>
     </main>
   );
 }
