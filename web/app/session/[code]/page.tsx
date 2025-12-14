@@ -21,7 +21,7 @@ export default function SessionPage({ params }: { params: { code: string } }) {
   const [remaining, setRemaining] = useState<number | null>(null);
   const [correctIndex, setCorrectIndex] = useState<number | null>(null);
   const [round, setRound] = useState<number>(0);
-  const isHost = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('host') === '1' : false;
+  const [isHost, setIsHost] = useState(false);
   const [ended, setEnded] = useState<boolean>(false);
   const [audio] = useState(() => (typeof window !== 'undefined' ? new AudioManager() : null));
   const [sfx, setSfx] = useState(true);
@@ -32,6 +32,10 @@ export default function SessionPage({ params }: { params: { code: string } }) {
 
   useEffect(() => {
     setMounted(true);
+    if (typeof window !== 'undefined') {
+      const hostParam = new URLSearchParams(window.location.search).get('host');
+      setIsHost(hostParam === '1');
+    }
   }, []);
 
   useEffect(() => {
