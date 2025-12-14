@@ -7,40 +7,57 @@ export default function HostPage() {
   const [category, setCategory] = useState('80s Pop Culture');
   const [code, setCode] = useState<string | null>(null);
   const [copyMsg, setCopyMsg] = useState<string>('');
+  const [loading, setLoading] = useState(false);
 
   async function createSession() {
-    const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
-    const res = await fetch(`${api}/api/sessions`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ category, roundConfig: { questions: rounds, timerSec: timer } })
-    });
-    const data = await res.json();
-    setCode(data.code);
+    setLoading(true);
+    try {
+      const api = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+      const res = await fetch(`${api}/api/sessions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ category, roundConfig: { questions: rounds, timerSec: timer } })
+      });
+      const data = await res.json();
+      setCode(data.code);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
     <main style={{ padding: 24, maxWidth: 600, margin: '0 auto' }}>
-      <h1 className="title">Host a Game</h1>
+      <h1 style={{ fontSize: 32, fontWeight: 800, color: 'var(--neon)', marginBottom: 16 }}>Host a Game</h1>
+      
       <div className="panel">
-        <label>Category
-          <select value={category} onChange={e => setCategory(e.target.value)} style={{ width: '100%', padding: 10, borderRadius: 8, background: 'var(--bg)', color: 'var(--text)', border: '1px solid var(--neon)' }}>
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12 }}>
+          <span style={{ fontWeight: 600, color: 'var(--text)' }}>Category</span>
+          <select value={category} onChange={e => setCategory(e.target.value)}>
             <option>80s Pop Culture</option>
           </select>
         </label>
-        <label>Questions per game
-          <input type="number" value={rounds} onChange={e => setRounds(parseInt(e.target.value || '10'))} style={{ width: '100%', padding: 10, borderRadius: 8, background: 'var(--bg)', color: 'var(--text)', border: '1px solid var(--neon)' }} />
+
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12 }}>
+          <span style={{ fontWeight: 600, color: 'var(--text)' }}>Questions per game</span>
+          <input type="number" value={rounds} onChange={e => setRounds(parseInt(e.target.value || '10'))} />
         </label>
-        <label>Timer per question (sec)
-          <input type="number" value={timer} onChange={e => setTimer(parseInt(e.target.value || '20'))} style={{ width: '100%', padding: 10, borderRadius: 8, background: 'var(--bg)', color: 'var(--text)', border: '1px solid var(--neon)' }} />
+
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12 }}>
+          <span style={{ fontWeight: 600, color: 'var(--text)' }}>Timer per question (sec)</span>
+          <input type="number" value={timer} onChange={e => setTimer(parseInt(e.target.value || '20'))} />
         </label>
-        <button onClick={createSession} style={{ width: '100%', marginTop: 8 }}>Create Session</button>
+
+        <button onClick={createSession} disabled={loading} style={{ width: '100%', marginTop: 8 }}>
+          {loading ? 'Creating...' : 'Create Session'}
+        </button>
       </div>
+
       {code && (
         <div className="panel" style={{ textAlign: 'center' }}>
-          <p>Share this code with your players:</p>
+          <p style={{ marginBottom: 16 }}>Share this code with your players:</p>
           <p style={{ fontSize: 32, fontWeight: 800, color: 'var(--neon)', letterSpacing: 4, margin: '12px 0' }}>{code}</p>
-          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
+          
+          <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
             <button onClick={async () => {
               if (!navigator?.clipboard) {
                 setCopyMsg('Clipboard unavailable');
@@ -61,7 +78,9 @@ export default function HostPage() {
               setTimeout(() => setCopyMsg(''), 1200);
             }}>Copy Invite Link</button>
           </div>
-          {copyMsg && <p className="muted" style={{ marginTop: 6 }}>{copyMsg}</p>}
+
+          {copyMsg && <p style={{ color: 'var(--text-muted)', fontSize: 12, marginBottom: 12 }}>{copyMsg}</p>}
+
           <a href={`/session/${code}?host=1`} style={{ display: 'inline-block', padding: '12px 24px', background: 'var(--neon)', color: 'var(--bg)', borderRadius: 'var(--radius)', fontWeight: 600, marginTop: 8 }}>Go to Lobby</a>
         </div>
       )}

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Night - V2 Design</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-light: #818cf8;
+      --primary-dark: #4f46e5;
+      --accent: #ec4899;
+      --accent-light: #f472b6;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --bg-dark: #0f172a;
+      --bg-light: #1e293b;
+      --bg-lighter: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --border: #475569;
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .v1-section {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 48px;
+    }
+
+    .v1-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .v1-header h2 {
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    .version-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .prototypes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+      gap: 24px;
+    }
+
+    .prototype {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .prototype:hover {
+      border-color: var(--primary);
+      box-shadow: 0 12px 24px rgba(99, 102, 241, 0.1);
+    }
+
+    .prototype-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--primary-dark);
+    }
+
+    .prototype-header h3 {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .prototype-frame {
+      padding: 20px;
+      background: var(--bg-dark);
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(99, 102, 241, 0.05);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+    }
+
+    .btn-accent:hover {
+      background: var(--accent-light);
+    }
+
+    .btn-success {
+      background: var(--success);
+    }
+
+    .btn-success:hover {
+      background: #059669;
+    }
+
+    .input-field {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      font-size: 13px;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: var(--bg-lighter);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+
+    .input-label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .code-box {
+      background: var(--bg-lighter);
+      border: 2px solid var(--primary);
+      padding: 20px;
+      border-radius: var(--radius);
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 3px;
+      margin: 16px 0;
+    }
+
+    .button-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+    }
+
+    .card {
+      background: var(--bg-lighter);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      transition: all 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--primary);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .card-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(99, 102, 241, 0.2);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .status-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      padding: 6px 12px;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+      border-radius: 999px;
+    }
+
+    .status-indicator.connecting {
+      background: rgba(245, 158, 11, 0.1);
+      color: var(--warning);
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background: currentColor;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .team-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .team-item {
+      background: var(--bg-light);
+      border-left: 3px solid var(--primary);
+      padding: 12px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .team-name {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .team-count {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .leaderboard {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .leaderboard-item {
+      background: var(--bg-light);
+      padding: 12px;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .rank {
+      font-weight: 800;
+      font-size: 18px;
+      width: 28px;
+      text-align: center;
+    }
+
+    .rank.first {
+      color: #fbbf24;
+    }
+
+    .rank.second {
+      color: #d1d5db;
+    }
+
+    .rank.third {
+      color: #d97706;
+    }
+
+    .leaderboard-info {
+      flex: 1;
+    }
+
+    .leaderboard-score {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .leaderboard-name {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .leaderboard-points {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: var(--bg-dark);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .question-box {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: var(--radius);
+    }
+
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(236, 72, 153, 0.1);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .question-text {
+      color: var(--text-primary);
+      font-weight: 500;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .choices {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .choice-btn {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s;
+      font-size: 13px;
+    }
+
+    .choice-btn:hover {
+      border-color: var(--primary);
+      background: rgba(99, 102, 241, 0.05);
+      color: var(--primary);
+    }
+
+    .choice-btn.correct {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .choice-btn.incorrect {
+      background: rgba(239, 68, 68, 0.2);
+      border-color: var(--danger);
+      color: var(--danger);
+      opacity: 0.6;
+    }
+
+    .alert {
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid var(--primary);
+      padding: 12px;
+      border-radius: var(--radius);
+      color: var(--primary);
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .alert.success {
+      background: rgba(16, 185, 129, 0.1);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 16px 0;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 16px;
+    }
+
+    .highlight {
+      background: rgba(236, 72, 153, 0.1);
+      border-left: 3px solid var(--accent);
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Game Night</h1>
+      <p class="subtitle">V2 Design System — Modern, Clean, Gradient</p>
+    </header>
+
+    <!-- V1 Archived Section -->
+    <div class="v1-section">
+      <div class="v1-header">
+        <h2>V1 - Neon Console</h2>
+        <span class="version-badge">Archived</span>
+      </div>
+      <p style="color: var(--text-muted); font-size: 13px;">
+        The original neon console design is preserved at <code style="background: var(--bg-dark); padding: 4px 8px; border-radius: 4px;">design/prototypes/index.html</code>. 
+        This V2 design uses a modern, clean aesthetic with indigo/pink gradients and improved typography.
+      </p>
+    </div>
+
+    <!-- V2 Prototypes -->
+    <div class="prototypes">
+      <!-- Host Page V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Host Page</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="form-group">
+            <label class="input-label">Category</label>
+            <select class="input-field">
+              <option>80s Pop Culture</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="input-label">Questions per game</label>
+            <input class="input-field" type="number" value="10">
+          </div>
+          <div class="form-group">
+            <label class="input-label">Timer per question (sec)</label>
+            <input class="input-field" type="number" value="20">
+          </div>
+          <button class="btn" style="width: 100%; margin-top: 8px;">Create Session</button>
+          
+          <div class="divider"></div>
+          
+          <div style="text-align: center;">
+            <label class="input-label" style="text-align: center;">Session Code</label>
+            <div class="code-box">ABC123</div>
+          </div>
+          
+          <div class="button-group">
+            <button class="btn-secondary">Copy Code</button>
+            <button class="btn-secondary">Copy Invite</button>
+          </div>
+          
+          <button class="btn btn-accent" style="width: 100%;">Go to Lobby</button>
+        </div>
+      </div>
+
+      <!-- Join Page V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Join Page</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="form-group">
+            <label class="input-label">Session Code</label>
+            <input class="input-field" type="text" placeholder="Enter or paste code" style="text-align: center; font-size: 16px; letter-spacing: 2px;">
+          </div>
+          
+          <div class="button-group" style="grid-template-columns: 1fr 1fr;">
+            <button class="btn-secondary">Paste</button>
+            <button class="btn-secondary">Clear</button>
+          </div>
+          
+          <div class="form-group">
+            <label class="input-label">Your Name</label>
+            <input class="input-field" placeholder="Enter your name">
+          </div>
+          
+          <div class="divider"></div>
+          
+          <label class="input-label">Team (Optional)</label>
+          <div class="button-group" style="grid-template-columns: 1fr 1fr; margin-bottom: 12px;">
+            <button class="btn-secondary">Create Team</button>
+            <button class="btn-secondary">Join Team</button>
+          </div>
+          <input class="input-field" placeholder="Team name" style="margin-bottom: 12px;">
+          
+          <button class="btn" style="width: 100%;">Join Game</button>
+        </div>
+      </div>
+
+      <!-- Lobby V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Lobby / Session</h3>
+        </div>
+        <div class="prototype-frame">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="status-indicator"><span class="dot"></span>Connected</span>
+            <span style="font-size: 12px; color: var(--text-muted);">Round: <strong style="color: var(--primary);">0</strong></span>
+          </div>
+          
+          <div class="team-list">
+            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 8px;">Teams (2)</div>
+            <div class="team-item">
+              <span class="team-name">Developers</span>
+              <span class="team-count">3 players</span>
+            </div>
+            <div class="team-item">
+              <span class="team-name">Designers</span>
+              <span class="team-count">2 players</span>
+            </div>
+          </div>
+          
+          <div class="divider"></div>
+          
+          <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 8px;">Players</div>
+          <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px;">
+            <div>Alice <span class="badge">Developers</span></div>
+            <div>Bob <span class="badge">Developers</span></div>
+            <div>Carol <span class="badge">Designers</span></div>
+          </div>
+          
+          <button class="btn" style="width: 100%; margin-top: 16px;">Start Round</button>
+        </div>
+      </div>
+
+      <!-- Question State V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Question State</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="question-box">
+            <div class="question-header">
+              <div style="font-size: 11px; color: var(--text-muted);">Question 3 of 10</div>
+              <div class="timer">⏱ 15s left</div>
+            </div>
+            
+            <div class="question-text">In what year was 'Back to the Future' released?</div>
+            
+            <div class="choices">
+              <button class="choice-btn">1983</button>
+              <button class="choice-btn">1985</button>
+              <button class="choice-btn">1987</button>
+              <button class="choice-btn">1989</button>
+            </div>
+            
+            <div style="margin-top: 12px; font-size: 12px; color: var(--text-muted);">Answer submitted! Waiting for results…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leaderboard V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Leaderboard</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="leaderboard">
+            <div class="leaderboard-item">
+              <span class="rank first">🥇</span>
+              <div class="leaderboard-info">
+                <div class="leaderboard-score">
+                  <span class="leaderboard-name">Developers</span>
+                  <span class="leaderboard-points">850</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+            <div class="leaderboard-item">
+              <span class="rank second">🥈</span>
+              <div class="leaderboard-info">
+                <div class="leaderboard-score">
+                  <span class="leaderboard-name">Designers</span>
+                  <span class="leaderboard-points">425</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+              </div>
+            </div>
+            <div class="leaderboard-item">
+              <span class="rank third">🥉</span>
+              <div class="leaderboard-info">
+                <div class="leaderboard-score">
+                  <span class="leaderboard-name">Solo Players</span>
+                  <span class="leaderboard-points">212</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 25%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Host Controls V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Host Controls</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="highlight">Host-only actions available</div>
+          
+          <div class="button-group" style="grid-template-columns: 1fr;">
+            <button class="btn">Copy Invite Link</button>
+            <button class="btn btn-accent">End Question Now</button>
+            <button class="btn-secondary">Next Round</button>
+          </div>
+          
+          <div class="divider"></div>
+          
+          <div style="font-size: 12px; color: var(--text-muted);">
+            <p style="margin-bottom: 8px;">• <strong>Copy Invite:</strong> Share full session URL</p>
+            <p style="margin-bottom: 8px;">• <strong>End Question:</strong> Force-finalize if timer stalls</p>
+            <p>• <strong>Next Round:</strong> Continue to next question</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reconnect State V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Reconnect State</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="alert">
+            ⚡ Rejoined mid-question — submit before time runs out.
+          </div>
+          
+          <div class="question-box">
+            <div class="question-header">
+              <div style="font-size: 11px; color: var(--text-muted);">Question 5 of 10</div>
+              <div class="timer">⏱ 8s left</div>
+            </div>
+            
+            <div class="question-text">Michael Jackson's 'Thriller' was released in which year?</div>
+            
+            <div class="choices">
+              <button class="choice-btn">1980</button>
+              <button class="choice-btn">1982</button>
+              <button class="choice-btn">1984</button>
+              <button class="choice-btn">1986</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results State V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Results / Correct Answer</h3>
+        </div>
+        <div class="prototype-frame">
+          <div class="alert alert.success">
+            ✓ Correct! +150 points + 50 bonus
+          </div>
+          
+          <div class="question-box">
+            <div class="question-text">In what year was 'Back to the Future' released?</div>
+            
+            <div class="choices">
+              <button class="choice-btn">1983</button>
+              <button class="choice-btn correct">1985 ✓</button>
+              <button class="choice-btn">1987</button>
+              <button class="choice-btn">1989</button>
+            </div>
+          </div>
+          
+          <button class="btn btn-success" style="width: 100%; margin-top: 12px;">Next Question</button>
+        </div>
+      </div>
+
+      <!-- Game Over V2 -->
+      <div class="prototype">
+        <div class="prototype-header">
+          <h3>Game Over</h3>
+        </div>
+        <div class="prototype-frame">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 32px; margin-bottom: 8px;">🎉</div>
+            <div style="font-size: 16px; font-weight: 700; color: var(--primary);">GAME OVER</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">10 questions played</div>
+          </div>
+          
+          <div class="leaderboard">
+            <div class="leaderboard-item">
+              <span class="rank first">1</span>
+              <div class="leaderboard-info" style="flex: 1;">
+                <div class="leaderboard-score">
+                  <span class="leaderboard-name">Developers</span>
+                  <span class="leaderboard-points">8,500</span>
+                </div>
+              </div>
+            </div>
+            <div class="leaderboard-item">
+              <span class="rank second">2</span>
+              <div class="leaderboard-info" style="flex: 1;">
+                <div class="leaderboard-score">
+                  <span class="leaderboard-name">Designers</span>
+                  <span class="leaderboard-points">6,250</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn" style="width: 100%; margin-top: 16px;">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

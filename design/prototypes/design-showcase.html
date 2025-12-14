@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Night - Design System Showcase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+
+    .design-selector {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 2000;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(30, 41, 59, 0.95);
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 2px solid #475569;
+    }
+
+    .design-selector label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .design-selector select {
+      padding: 8px 12px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #f1f5f9;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .design-selector select:hover {
+      border-color: #6366f1;
+    }
+
+    .design-frame {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .design-frame.active {
+      display: block;
+    }
+
+    /* ===== V2 DESIGN STYLES ===== */
+    .v2-container {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .v2-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .v2-title {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .v2-subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .v2-content {
+      flex: 1;
+      display: flex;
+      gap: 24px;
+      overflow: hidden;
+    }
+
+    .v2-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .v2-section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #6366f1;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .v2-card {
+      background: #334155;
+      border: 1px solid #475569;
+      border-radius: 12px;
+      padding: 16px;
+      transition: all 0.3s;
+      margin-bottom: 12px;
+    }
+
+    .v2-card:hover {
+      border-color: #6366f1;
+    }
+
+    .v2-question-box {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
+      border: 2px solid #6366f1;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .v2-question-text {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .v2-choices {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .v2-choice-btn {
+      padding: 10px 12px;
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #cbd5e1;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s;
+      text-align: left;
+    }
+
+    .v2-choice-btn:hover {
+      border-color: #6366f1;
+      background: rgba(99, 102, 241, 0.05);
+      color: #6366f1;
+    }
+
+    .v2-button {
+      padding: 12px 20px;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.2s;
+    }
+
+    .v2-button:hover {
+      background: #818cf8;
+      transform: translateY(-2px);
+    }
+
+    /* ===== V3 DESIGN STYLES ===== */
+    .v3-container {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .v3-header {
+      background: linear-gradient(180deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 1, 110, 0.05) 100%);
+      border-bottom: 3px solid #00d4ff;
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-shrink: 0;
+    }
+
+    .v3-title {
+      font-size: 48px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #00d4ff 0%, #ff006e 50%, #ffd60a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .v3-leaderboard-mini {
+      display: flex;
+      gap: 30px;
+      flex: 1;
+    }
+
+    .v3-rank-item {
+      text-align: center;
+      min-width: 200px;
+    }
+
+    .v3-rank-medal {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    .v3-rank-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .v3-rank-score {
+      font-size: 32px;
+      font-weight: 900;
+      color: #00d4ff;
+    }
+
+    .v3-menu-button {
+      padding: 12px 24px;
+      background: #00d4ff;
+      color: #0a0e27;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .v3-menu-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+    }
+
+    .v3-main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .v3-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 60px;
+      position: relative;
+    }
+
+    .v3-question-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .v3-question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .v3-question-number {
+      font-size: 20px;
+      color: #7a849d;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .v3-question-timer {
+      font-size: 48px;
+      font-weight: 900;
+      color: #ff006e;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .v3-timer-pulse {
+      animation: v3-pulse 1s infinite;
+    }
+
+    @keyframes v3-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .v3-question-box {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 1, 110, 0.05) 100%);
+      border: 4px solid #00d4ff;
+      border-radius: 16px;
+      padding: 48px;
+    }
+
+    .v3-question-text {
+      font-size: 56px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+
+    .v3-choices-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .v3-choice-button {
+      background: #2d3561;
+      border: 3px solid #3d4570;
+      color: #ffffff;
+      padding: 28px;
+      border-radius: 12px;
+      font-size: 28px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .v3-choice-button:hover {
+      border-color: #00d4ff;
+      background: #1a1f3a;
+      transform: scale(1.03);
+      box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .v2-content {
+        gap: 16px;
+      }
+
+      .v3-leaderboard-mini {
+        gap: 20px;
+      }
+
+      .v3-rank-item {
+        min-width: 150px;
+      }
+
+      .v3-rank-score {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .design-selector {
+        right: 10px;
+        top: 10px;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .v2-title {
+        font-size: 24px;
+      }
+
+      .v3-title {
+        font-size: 32px;
+      }
+
+      .v3-header {
+        padding: 16px 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .v3-leaderboard-mini {
+        gap: 15px;
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 12px;
+      }
+
+      .v3-rank-item {
+        min-width: 120px;
+      }
+
+      .v3-rank-score {
+        font-size: 18px;
+      }
+
+      .v3-question-text {
+        font-size: 32px;
+      }
+
+      .v3-choices-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .v3-choice-button {
+        font-size: 18px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Design Selector -->
+  <div class="design-selector">
+    <label for="design-switch">Design Version:</label>
+    <select id="design-switch" onchange="switchDesign(this.value)">
+      <option value="v2">V2 - Clean Modern</option>
+      <option value="v3">V3 - TV Fullscreen</option>
+    </select>
+  </div>
+
+  <!-- V2 Design -->
+  <div class="design-frame active" id="frame-v2">
+    <div class="v2-container">
+      <div class="v2-header">
+        <h1 class="v2-title">Game Night</h1>
+        <p class="v2-subtitle">V2 Design System — Modern, Clean, Gradient</p>
+      </div>
+
+      <div class="v2-content">
+        <!-- Left Section -->
+        <div class="v2-section">
+          <h2 class="v2-section-title">Teams</h2>
+          <div class="v2-card">
+            <div style="font-weight: 600; color: #6366f1; margin-bottom: 8px;">Developers</div>
+            <div style="font-size: 12px; color: #94a3b8;">Alice • Bob • Carol</div>
+          </div>
+          <div class="v2-card">
+            <div style="font-weight: 600; color: #6366f1; margin-bottom: 8px;">Designers</div>
+            <div style="font-size: 12px; color: #94a3b8;">Diana • Eve</div>
+          </div>
+          <button class="v2-button" style="width: 100%; margin-top: 12px;">Start Game</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="v2-section">
+          <h2 class="v2-section-title">Leaderboard</h2>
+          <div class="v2-card">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-weight: 600;">🥇 Developers</span>
+              <span style="color: #6366f1; font-weight: 700;">8,500</span>
+            </div>
+            <div style="width: 100%; height: 6px; background: #1e293b; border-radius: 3px; overflow: hidden;">
+              <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);"></div>
+            </div>
+          </div>
+          <div class="v2-card">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-weight: 600;">🥈 Designers</span>
+              <span style="color: #6366f1; font-weight: 700;">6,250</span>
+            </div>
+            <div style="width: 100%; height: 6px; background: #1e293b; border-radius: 3px; overflow: hidden;">
+              <div style="width: 73%; height: 100%; background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);"></div>
+            </div>
+          </div>
+
+          <div class="v2-question-box">
+            <div class="v2-question-text">In what year was 'Back to the Future' released?</div>
+            <div class="v2-choices">
+              <button class="v2-choice-btn">1983</button>
+              <button class="v2-choice-btn">1985</button>
+              <button class="v2-choice-btn">1987</button>
+              <button class="v2-choice-btn">1989</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- V3 Design -->
+  <div class="design-frame" id="frame-v3">
+    <div class="v3-container">
+      <!-- Top Bar -->
+      <div class="v3-header">
+        <div class="v3-title">Game Night</div>
+        <div class="v3-leaderboard-mini">
+          <div class="v3-rank-item">
+            <div class="v3-rank-medal">🥇</div>
+            <div class="v3-rank-name">Developers</div>
+            <div class="v3-rank-score">8,500</div>
+          </div>
+          <div class="v3-rank-item">
+            <div class="v3-rank-medal">🥈</div>
+            <div class="v3-rank-name">Designers</div>
+            <div class="v3-rank-score">6,250</div>
+          </div>
+          <div class="v3-rank-item">
+            <div class="v3-rank-medal">🥉</div>
+            <div class="v3-rank-name">Product</div>
+            <div class="v3-rank-score">4,100</div>
+          </div>
+        </div>
+        <button class="v3-menu-button" onclick="alert('Settings menu would open here')">⚙ Settings</button>
+      </div>
+
+      <!-- Main Content -->
+      <div class="v3-main">
+        <div class="v3-content">
+          <div class="v3-question-container">
+            <div class="v3-question-header">
+              <div class="v3-question-number">Question 5 of 10</div>
+              <div class="v3-question-timer">
+                <span class="v3-timer-pulse">⏱</span>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="v3-question-box">
+              <div class="v3-question-text">In what year was 'Back to the Future' released?</div>
+              <div class="v3-choices-grid">
+                <button class="v3-choice-button">1983</button>
+                <button class="v3-choice-button">1985</button>
+                <button class="v3-choice-button">1987</button>
+                <button class="v3-choice-button">1989</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchDesign(version) {
+      // Hide all frames
+      document.querySelectorAll('.design-frame').forEach(frame => {
+        frame.classList.remove('active');
+      });
+      
+      // Show selected frame
+      document.getElementById(`frame-${version}`).classList.add('active');
+      
+      // Save preference to localStorage
+      localStorage.setItem('selectedDesign', version);
+    }
+
+    // Load saved preference on page load
+    window.addEventListener('load', () => {
+      const savedDesign = localStorage.getItem('selectedDesign') || 'v2';
+      document.getElementById('design-switch').value = savedDesign;
+      switchDesign(savedDesign);
+    });
+  </script>
+</body>
+</html>

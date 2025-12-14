@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Night - V3 TV Design (Fullscreen)</title>
+  <style>
+    :root {
+      --primary: #00d4ff;
+      --secondary: #ff006e;
+      --accent: #ffd60a;
+      --success: #06ffa5;
+      --danger: #ff4757;
+      --bg-dark: #0a0e27;
+      --bg-mid: #1a1f3a;
+      --bg-light: #2d3561;
+      --text-primary: #ffffff;
+      --text-secondary: #b0b9d4;
+      --text-muted: #7a849d;
+      --border: #3d4570;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 100%);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.4;
+    }
+
+    .tv-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ===== TOP BAR: TEAMS & LEADERBOARD ===== */
+    .tv-header {
+      background: linear-gradient(180deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 1, 110, 0.05) 100%);
+      border-bottom: 3px solid var(--primary);
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-shrink: 0;
+    }
+
+    .header-title {
+      font-size: 48px;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .leaderboard-mini {
+      display: flex;
+      gap: 30px;
+      flex: 1;
+    }
+
+    .rank-item {
+      text-align: center;
+      min-width: 200px;
+    }
+
+    .rank-medal {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    .rank-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .rank-score {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    .menu-button {
+      padding: 12px 24px;
+      background: var(--primary);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      flex-shrink: 0;
+    }
+
+    .menu-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .tv-main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .tv-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 60px;
+      position: relative;
+    }
+
+    /* ===== STATES ===== */
+    .state {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .state.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .state-indicator {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .state-name {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+
+    /* ===== QUESTION STATE ===== */
+    .question-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .question-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .question-number {
+      font-size: 20px;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .question-timer {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .timer-pulse {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .question-box {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 1, 110, 0.05) 100%);
+      border: 4px solid var(--primary);
+      border-radius: 16px;
+      padding: 48px;
+    }
+
+    .question-text {
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+
+    .choices-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .choice-button {
+      background: var(--bg-light);
+      border: 3px solid var(--border);
+      color: var(--text-primary);
+      padding: 28px;
+      border-radius: 12px;
+      font-size: 28px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .choice-button:hover {
+      border-color: var(--primary);
+      background: var(--bg-mid);
+      transform: scale(1.03);
+      box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
+    }
+
+    .choice-button.correct {
+      background: rgba(6, 255, 165, 0.2);
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .choice-button.incorrect {
+      background: rgba(255, 71, 87, 0.2);
+      border-color: var(--danger);
+      color: var(--danger);
+      opacity: 0.6;
+    }
+
+    /* ===== LOBBY STATE ===== */
+    .lobby-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .team-card {
+      background: linear-gradient(135deg, var(--bg-light) 0%, rgba(45, 53, 97, 0.8) 100%);
+      border: 4px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s;
+    }
+
+    .team-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 12px 48px rgba(0, 212, 255, 0.2);
+    }
+
+    .team-card-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .team-card-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .players-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .player-item {
+      font-size: 20px;
+      color: var(--text-secondary);
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      border-left: 3px solid var(--primary);
+    }
+
+    /* ===== GAME OVER STATE ===== */
+    .game-over-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      max-width: 1000px;
+    }
+
+    .game-over-banner {
+      text-align: center;
+    }
+
+    .game-over-emoji {
+      font-size: 120px;
+      margin-bottom: 24px;
+      animation: bounce 0.6s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+    }
+
+    .game-over-text {
+      font-size: 72px;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      text-shadow: 0 0 40px rgba(255, 214, 10, 0.3);
+    }
+
+    .final-leaderboard {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .final-rank-item {
+      background: var(--bg-light);
+      border: 3px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      transition: all 0.3s;
+    }
+
+    .final-rank-item:hover {
+      border-color: var(--primary);
+      transform: translateX(8px);
+    }
+
+    .final-medal {
+      font-size: 56px;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .final-info {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .final-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .final-score {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    /* ===== RECONNECT STATE ===== */
+    .reconnect-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+    }
+
+    .reconnect-alert {
+      background: linear-gradient(135deg, rgba(255, 1, 110, 0.15) 0%, rgba(0, 212, 255, 0.15) 100%);
+      border: 4px solid var(--secondary);
+      border-radius: 16px;
+      padding: 36px;
+      text-align: center;
+    }
+
+    .reconnect-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+      animation: spin 2s infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .reconnect-text {
+      font-size: 36px;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .reconnect-subtext {
+      font-size: 20px;
+      color: var(--text-secondary);
+    }
+
+    /* ===== OFFCANVAS MENU ===== */
+    .offcanvas {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 450px;
+      background: var(--bg-light);
+      border-left: 3px solid var(--primary);
+      transform: translateX(450px);
+      transition: transform 0.4s ease;
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .offcanvas.open {
+      transform: translateX(0);
+    }
+
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .offcanvas-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .close-button {
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 32px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .close-button:hover {
+      color: var(--primary);
+      transform: rotate(90deg);
+    }
+
+    .settings-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .settings-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .select-field, .input-field {
+      width: 100%;
+      padding: 14px;
+      background: var(--bg-mid);
+      border: 2px solid var(--border);
+      color: var(--text-primary);
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: inherit;
+    }
+
+    .select-field:hover, .select-field:focus,
+    .input-field:hover, .input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+      outline: none;
+    }
+
+    .offcanvas-divider {
+      height: 2px;
+      background: var(--border);
+    }
+
+    .offcanvas-button {
+      padding: 16px 20px;
+      background: linear-gradient(135deg, var(--primary) 0%, #0099cc 100%);
+      color: var(--bg-dark);
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .offcanvas-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+    }
+
+    .offcanvas-button.secondary {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .offcanvas-button.secondary:hover {
+      background: rgba(0, 212, 255, 0.1);
+    }
+
+    /* ===== OVERLAY ===== */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+
+    /* ===== NAVIGATION ===== */
+    .tv-nav {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      flex-shrink: 0;
+      z-index: 100;
+    }
+
+    .nav-button {
+      padding: 12px 24px;
+      background: var(--bg-light);
+      border: 2px solid var(--border);
+      color: var(--text-primary);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav-button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .nav-button.active {
+      background: var(--primary);
+      color: var(--bg-dark);
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="tv-container">
+    <!-- TOP BAR: LEADERBOARD -->
+    <div class="tv-header">
+      <div class="header-title">Game Night</div>
+      <div class="leaderboard-mini">
+        <div class="rank-item">
+          <div class="rank-medal">🥇</div>
+          <div class="rank-name">Developers</div>
+          <div class="rank-score">8,500</div>
+        </div>
+        <div class="rank-item">
+          <div class="rank-medal">🥈</div>
+          <div class="rank-name">Designers</div>
+          <div class="rank-score">6,250</div>
+        </div>
+        <div class="rank-item">
+          <div class="rank-medal">🥉</div>
+          <div class="rank-name">Product</div>
+          <div class="rank-score">4,100</div>
+        </div>
+      </div>
+      <button class="menu-button" onclick="openMenu()">⚙ Settings</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="tv-main">
+      <div class="tv-content">
+        <!-- STATE 1: QUESTION -->
+        <div class="state state-1 active">
+          <div class="state-indicator">State 1/4</div>
+          <div class="state-name">QUESTION</div>
+          <div class="question-container">
+            <div class="question-header">
+              <div class="question-number">Question 5 of 10</div>
+              <div class="question-timer">
+                <span class="timer-pulse">⏱</span>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-text">In what year was 'Back to the Future' released?</div>
+              <div class="choices-grid">
+                <button class="choice-button">1983</button>
+                <button class="choice-button">1985</button>
+                <button class="choice-button">1987</button>
+                <button class="choice-button">1989</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE 2: LOBBY -->
+        <div class="state state-2">
+          <div class="state-indicator">State 2/4</div>
+          <div class="state-name">LOBBY</div>
+          <div class="lobby-container">
+            <div class="team-card">
+              <div class="team-card-title">Developers</div>
+              <div class="team-card-subtitle">3 players</div>
+              <div class="players-list">
+                <div class="player-item">Alice Chen</div>
+                <div class="player-item">Bob Johnson</div>
+                <div class="player-item">Carol White</div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="team-card-title">Designers</div>
+              <div class="team-card-subtitle">2 players</div>
+              <div class="players-list">
+                <div class="player-item">Diana Martinez</div>
+                <div class="player-item">Eve Park</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE 3: GAME OVER -->
+        <div class="state state-3">
+          <div class="state-indicator">State 3/4</div>
+          <div class="state-name">GAME OVER</div>
+          <div class="game-over-container">
+            <div class="game-over-banner">
+              <div class="game-over-emoji">🎉</div>
+              <div class="game-over-text">Game Over</div>
+            </div>
+            <div class="final-leaderboard">
+              <div class="final-rank-item">
+                <div class="final-medal">🥇</div>
+                <div class="final-info">
+                  <div class="final-name">Developers</div>
+                  <div class="final-score">8,500</div>
+                </div>
+              </div>
+              <div class="final-rank-item">
+                <div class="final-medal">🥈</div>
+                <div class="final-info">
+                  <div class="final-name">Designers</div>
+                  <div class="final-score">6,250</div>
+                </div>
+              </div>
+              <div class="final-rank-item">
+                <div class="final-medal">🥉</div>
+                <div class="final-info">
+                  <div class="final-name">Product Team</div>
+                  <div class="final-score">4,100</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE 4: RECONNECT -->
+        <div class="state state-4">
+          <div class="state-indicator">State 4/4</div>
+          <div class="state-name">RECONNECT</div>
+          <div class="reconnect-container">
+            <div class="reconnect-alert">
+              <div class="reconnect-icon">⚡</div>
+              <div class="reconnect-text">Connection Restored!</div>
+              <div class="reconnect-subtext">You rejoined mid-question. Submit your answer now.</div>
+            </div>
+            <div class="question-box">
+              <div class="question-text">Which movie featured the song 'Time of Your Life'?</div>
+              <div class="choices-grid">
+                <button class="choice-button">Shrek</button>
+                <button class="choice-button">Toy Story</button>
+                <button class="choice-button">Antz</button>
+                <button class="choice-button">Ice Age</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS MENU -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+    <div class="offcanvas" id="offcanvas">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title">Settings</div>
+        <button class="close-button" onclick="closeMenu()">✕</button>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label">Category</label>
+        <select class="select-field">
+          <option>80s Pop Culture</option>
+          <option>90s Movies</option>
+          <option>Music Legends</option>
+          <option>History</option>
+        </select>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label">Questions per Game</label>
+        <input class="input-field" type="number" value="10" min="5" max="50">
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label">Timer per Question (sec)</label>
+        <input class="input-field" type="number" value="20" min="5" max="60">
+      </div>
+
+      <div class="offcanvas-divider"></div>
+
+      <div class="settings-group">
+        <label class="settings-label">Session Code</label>
+        <div style="background: var(--bg-mid); padding: 12px 14px; border-radius: 8px; border: 2px solid var(--border); font-family: monospace; font-size: 20px; font-weight: 700; color: var(--primary); text-align: center; letter-spacing: 2px;">
+          ABC123
+        </div>
+      </div>
+
+      <button class="offcanvas-button">Copy Invite Link</button>
+      <button class="offcanvas-button secondary">Copy Code</button>
+
+      <div class="offcanvas-divider"></div>
+
+      <button class="offcanvas-button">Start Game</button>
+      <button class="offcanvas-button secondary">End Game</button>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="tv-nav" style="display: none;">
+    </div>
+  </div>
+
+  <script>
+    function showState(num) {
+      document.querySelectorAll('.state').forEach(s => s.classList.remove('active'));
+      document.querySelector(`.state-${num}`).classList.add('active');
+      document.querySelectorAll('.nav-button').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx === num - 1);
+      });
+    }
+
+    function openMenu() {
+      document.getElementById('offcanvas').classList.add('open');
+      document.getElementById('overlay').classList.add('show');
+    }
+
+    function closeMenu() {
+      document.getElementById('offcanvas').classList.remove('open');
+      document.getElementById('overlay').classList.remove('show');
+    }
+  </script>
+</body>
+</html>
