@@ -4,6 +4,7 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { MongoClient } from 'mongodb';
 
@@ -30,6 +31,9 @@ function generateCode() {
 }
 
 const defaultRoundConfig = { questions: 10, timerSec: 20 };
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const questionFile = path.join(__dirname, 'data', '80s-pop-culture.json');
 
 async function persistSession(code, session) {
   try {
@@ -180,10 +184,9 @@ app.post('/api/sessions/:code/start', async (req, res) => {
   session.started = true;
   session.round = 1;
   // Load a random question from dataset
-  const dataPath = path.join(process.cwd(), '..', 'data', '80s-pop-culture.json');
   let question = null;
   try {
-    const raw = fs.readFileSync(dataPath, 'utf-8');
+    const raw = fs.readFileSync(questionFile, 'utf-8');
     const json = JSON.parse(raw);
     const list = json.questions || [];
     if (list.length > 0) {
@@ -218,10 +221,9 @@ app.post('/api/sessions/:code/round/next', async (req, res) => {
     await persistSession(code, session);
     return res.json({ ok: true, ended: true });
   }
-  const dataPath = path.join(process.cwd(), '..', 'data', '80s-pop-culture.json');
   let question = null;
   try {
-    const raw = fs.readFileSync(dataPath, 'utf-8');
+    const raw = fs.readFileSync(questionFile, 'utf-8');
     const json = JSON.parse(raw);
     const list = json.questions || [];
     if (list.length > 0) {
