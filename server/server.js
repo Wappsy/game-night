@@ -40,9 +40,41 @@ const CATEGORY_FILES = {
   'Famous Movie Quotes': path.join(__dirname, 'data', 'famous-movie-quotes.json'),
   '90s Pop Culture': path.join(__dirname, 'data', '90s-pop-culture.json'),
 };
+const CATEGORY_FILE_VALUES = Object.values(CATEGORY_FILES);
+
+function buildQuestionKey(filePath, id, prompt) {
+  // Use dataset file path plus id/prompt to avoid collisions across categories
+  return `${filePath}::${id || prompt}`;
+}
 
 function getQuestionFile(category) {
+  if (category === 'Any Category') {
+    return CATEGORY_FILE_VALUES[Math.floor(Math.random() * CATEGORY_FILE_VALUES.length)];
+  }
   return CATEGORY_FILES[category] || CATEGORY_FILES['80s Pop Culture'];
+}
+
+function selectQuestionForSession(session) {
+  try {
+    const file = getQuestionFile(session.category);
+    const raw = fs.readFileSync(file, 'utf-8');
+    const json = JSON.parse(raw);
+    const list = json.questions || [];
+    const used = session.usedQuestions || new Set();
+    const available = list.filter(q => {
+      const key = buildQuestionKey(file, q.id, q.prompt);
+      return !used.has(key);
+    });
+    if (available.length === 0) return null;
+    const q = available[Math.floor(Math.random() * available.length)];
+    const key = buildQuestionKey(file, q.id, q.prompt);
+    used.add(key);
+    session.usedQuestions = used;
+    return { prompt: q.prompt, choices: q.choices, correctIndex: q.correctIndex, id: q.id };
+  } catch (e) {
+    console.error('selectQuestionForSession error', e);
+    return null;
+  }
 }
 
 async function persistSession(code, session) {
@@ -52,6 +84,7 @@ async function persistSession(code, session) {
       code,
       category: session.category,
       roundConfig: session.roundConfig,
+      usedQuestions: Array.from(session.usedQuestions || []),
       started: session.started,
       round: session.round,
       teamScores: session.teamScores,
@@ -83,6 +116,7 @@ async function loadSession(code) {
       teamScores: doc.teamScores || {},
       category: doc.category || '80s Pop Culture',
       roundConfig: doc.roundConfig || defaultRoundConfig,
+      usedQuestions: new Set(doc.usedQuestions || []),
       started: doc.started || false,
       round: doc.round || 0,
       current: doc.current
@@ -104,7 +138,7 @@ async function loadSession(code) {
 }
 
 // In-memory session store (for demo)
-const sessions = new Map(); // code -> { players: Map<socketId, {name, teamName}>, teams: Map<teamName, Set<socketId>>, teamScores: {}, started: false, round: 0, roundConfig, current: { question, startedAt, submitted: Set<socketId>, timerSec } }
+const sessions = new Map(); // code -> { players: Map<socketId, {name, teamName}>, teams: Map<teamName, Set<socketId>>, teamScores: {}, started: false, round: 0, roundConfig, usedQuestions: Set<string>, current: { question, startedAt, submitted: Set<socketId>, timerSec } }
 const currentTimers = new Map();
 
 let io; // assigned after server creation
@@ -140,7 +174,7 @@ function scheduleQuestionEnd(code, session) {
 app.post('/api/sessions', async (req, res) => {
   const { category = '80s Pop Culture', roundConfig = defaultRoundConfig } = req.body || {};
   const code = generateCode();
-  const session = { players: new Map(), teams: new Map(), teamScores: {}, category, roundConfig, started: false, round: 0 };
+  const session = { players: new Map(), teams: new Map(), teamScores: {}, category, roundConfig, started: false, round: 0, usedQuestions: new Set() };
   sessions.set(code, session);
   await persistSession(code, session);
   res.json({ code });
@@ -193,18 +227,12 @@ app.post('/api/sessions/:code/start', async (req, res) => {
   if (!session) return res.status(404).json({ error: 'Session not found' });
   session.started = true;
   session.round = 1;
-  // Load a random question from dataset
-  let question = null;
-  try {
-    const raw = fs.readFileSync(getQuestionFile(session.category), 'utf-8');
-    const json = JSON.parse(raw);
-    const list = json.questions || [];
-    if (list.length > 0) {
-      const q = list[Math.floor(Math.random() * list.length)];
-      question = { prompt: q.prompt, choices: q.choices, correctIndex: q.correctIndex };
-    }
-  } catch (e) {
-    // noop
+  const question = selectQuestionForSession(session);
+  if (!question) {
+    session.started = false;
+    session.round = 0;
+    await persistSession(code, session);
+    return res.status(400).json({ error: 'No available questions remaining for this category.' });
   }
   if (question) {
     const timerSec = (session.roundConfig?.timerSec ?? 20);
@@ -231,16 +259,14 @@ app.post('/api/sessions/:code/round/next', async (req, res) => {
     await persistSession(code, session);
     return res.json({ ok: true, ended: true });
   }
-  let question = null;
-  try {
-    const raw = fs.readFileSync(getQuestionFile(session.category), 'utf-8');
-    const json = JSON.parse(raw);
-    const list = json.questions || [];
-    if (list.length > 0) {
-      const q = list[Math.floor(Math.random() * list.length)];
-      question = { prompt: q.prompt, choices: q.choices, correctIndex: q.correctIndex };
-    }
-  } catch (e) {}
+  const question = selectQuestionForSession(session);
+  if (!question) {
+    io.to(code).emit('game_end', { finalScores: session.teamScores, totalRounds: session.round - 1, reason: 'no_questions_remaining' });
+    session.started = false;
+    session.current = null;
+    await persistSession(code, session);
+    return res.json({ ok: true, ended: true });
+  }
   if (question) {
     const timerSec = (session.roundConfig?.timerSec ?? 20);
     session.current = { question, startedAt: Date.now(), submitted: new Set(), timerSec };

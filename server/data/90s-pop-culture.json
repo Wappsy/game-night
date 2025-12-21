@@ -1,7 +1,7 @@
 {
   "meta": {
     "category": "90s Pop Culture",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "total": 200,
     "topics": [
       "Movies",
@@ -19,7 +19,7 @@
   },
   "questions": [
     {
-      "id": "90s-Movies-titanic-year",
+      "id": "90s-movies-titanic-release",
       "category": "90s Pop Culture",
       "topic": "Movies",
       "difficulty": "easy",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "id": "90s-Movies-the-matrix-directors",
+      "id": "90s-movies-matrix-directors",
       "category": "90s Pop Culture",
       "topic": "Movies",
       "difficulty": "medium",
@@ -57,49 +57,87 @@
       }
     },
     {
-      "id": "90s-Music-spice-girls-debut-single",
+      "id": "90s-movies-jurassic-park-year",
       "category": "90s Pop Culture",
-      "topic": "Music",
+      "topic": "Movies",
       "difficulty": "easy",
-      "prompt": "What was the Spice Girls' debut single?",
+      "prompt": "When did 'Jurassic Park' first hit theaters?",
       "choices": [
-        "Say You'll Be There",
-        "Wannabe",
-        "2 Become 1",
-        "Spice Up Your Life"
-      ],
-      "correctIndex": 1,
-      "source": "Virgin Records release history",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-Music-nirvana-nevermind-year",
-      "category": "90s Pop Culture",
-      "topic": "Music",
-      "difficulty": "medium",
-      "prompt": "Nirvana's album 'Nevermind' was released in which year?",
-      "choices": [
-        "1990",
         "1991",
         "1992",
-        "1993"
+        "1993",
+        "1994"
       ],
-      "correctIndex": 1,
-      "source": "DGC Records release history",
+      "correctIndex": 2,
+      "source": "Universal release history",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-TV-friends-premiere-year",
+      "id": "90s-movies-pulp-fiction-director",
       "category": "90s Pop Culture",
-      "topic": "TV",
+      "topic": "Movies",
       "difficulty": "easy",
-      "prompt": "In what year did 'Friends' first premiere?",
+      "prompt": "Who directed 'Pulp Fiction'?",
+      "choices": [
+        "Quentin Tarantino",
+        "Joel Coen",
+        "Guy Ritchie",
+        "Steven Soderbergh"
+      ],
+      "correctIndex": 0,
+      "source": "Miramax credits",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-fight-club-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "In which year was 'Fight Club' released?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 2,
+      "source": "20th Century Fox release history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-sixth-sense-quote",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Which film features the line 'I see dead people'?",
+      "choices": [
+        "The Sixth Sense",
+        "The Others",
+        "Stir of Echoes",
+        "Scream"
+      ],
+      "correctIndex": 0,
+      "source": "Hollywood Pictures",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-lion-king-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What year did Disney's 'The Lion King' release?",
       "choices": [
         "1992",
         "1993",
@@ -107,75 +145,2659 @@
         "1995"
       ],
       "correctIndex": 2,
-      "source": "NBC broadcast archives",
+      "source": "Disney release history",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-TV-the-x-files-leads",
+      "id": "90s-movies-toy-story-first",
       "category": "90s Pop Culture",
-      "topic": "TV",
-      "difficulty": "medium",
-      "prompt": "Who are the two FBI agents leading 'The X-Files'?",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "'Toy Story' was notable as the first fully computer-animated feature from which studio?",
       "choices": [
-        "Mulder & Scully",
-        "Krycek & Skinner",
-        "Doggett & Reyes",
-        "Riggs & Murtaugh"
+        "Pixar",
+        "DreamWorks",
+        "Blue Sky",
+        "Illumination"
       ],
       "correctIndex": 0,
-      "source": "Fox series cast",
+      "source": "Pixar milestone",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-Tech-nokia-3310-release",
+      "id": "90s-movies-neo-actor",
       "category": "90s Pop Culture",
-      "topic": "Tech",
+      "topic": "Movies",
       "difficulty": "easy",
-      "prompt": "The Nokia 3310 was released around what year?",
+      "prompt": "Who plays Neo in 'The Matrix'?",
+      "choices": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Johnny Depp",
+        "Brad Pitt"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-terminator2-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What year did 'Terminator 2: Judgment Day' release?",
+      "choices": [
+        "1990",
+        "1991",
+        "1992",
+        "1993"
+      ],
+      "correctIndex": 1,
+      "source": "TriStar release history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-titanic-awards",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "How many Oscars did 'Titanic' win?",
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctIndex": 2,
+      "source": "Academy Awards records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-good-will-hunting-actor",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Which actor played Sean Maguire in 'Good Will Hunting'?",
+      "choices": [
+        "Robin Williams",
+        "Matt Damon",
+        "Ben Affleck",
+        "Philip Seymour Hoffman"
+      ],
+      "correctIndex": 0,
+      "source": "Miramax cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-american-beauty-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "In which year was 'American Beauty' released?",
       "choices": [
         "1998",
         "1999",
         "2000",
         "2001"
       ],
-      "correctIndex": 2,
-      "source": "Nokia device history",
+      "correctIndex": 1,
+      "source": "DreamWorks release",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-Tech-windows-95-launch",
+      "id": "90s-movies-heat-director",
       "category": "90s Pop Culture",
-      "topic": "Tech",
+      "topic": "Movies",
       "difficulty": "medium",
-      "prompt": "Microsoft launched Windows 95 in which year?",
+      "prompt": "Who directed the crime epic 'Heat' (1995)?",
+      "choices": [
+        "Michael Mann",
+        "Ridley Scott",
+        "Tony Scott",
+        "Brian De Palma"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. credits",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-forrest-gump-bench",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "In 'Forrest Gump', where does Forrest tell his story?",
+      "choices": [
+        "On a bus",
+        "On a park bench",
+        "On a train",
+        "In a diner"
+      ],
+      "correctIndex": 1,
+      "source": "Paramount plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-shawshank-escape",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Andy Dufresne crawls through how much sewage in 'The Shawshank Redemption'?",
+      "choices": [
+        "100 yards",
+        "200 yards",
+        "500 yards",
+        "1,000 yards"
+      ],
+      "correctIndex": 2,
+      "source": "Film dialogue",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-true-lies-vehicle",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What vehicle does Arnold ride on top of in 'True Lies'?",
+      "choices": [
+        "Subway train",
+        "Fighter jet",
+        "Tank",
+        "Helicopter"
+      ],
+      "correctIndex": 1,
+      "source": "20th Century Fox action scene",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-blair-witch-budget",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "'The Blair Witch Project' is famous for which production trait?",
+      "choices": [
+        "Massive budget",
+        "Found-footage style",
+        "All-improvised musical numbers",
+        "Animated format"
+      ],
+      "correctIndex": 1,
+      "source": "Indie film history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-silence-lambs-awards",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "hard",
+      "prompt": "Which five major Oscars did 'The Silence of the Lambs' sweep?",
+      "choices": [
+        "Picture, Director, Actor, Actress, Screenplay",
+        "Picture, Director, Actor, Editing, Score",
+        "Picture, Director, Actor, Actress, Cinematography",
+        "Picture, Screenplay, Actor, Actress, Editing"
+      ],
+      "correctIndex": 0,
+      "source": "Academy Awards 1992",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-saving-private-ryan-landing",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "hard",
+      "prompt": "Which beach is depicted in the opening of 'Saving Private Ryan'?",
+      "choices": [
+        "Omaha",
+        "Utah",
+        "Sword",
+        "Juno"
+      ],
+      "correctIndex": 0,
+      "source": "DreamWorks/Amblin plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-big-lebowski-drink",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "What is The Dude's go-to drink?",
+      "choices": [
+        "White Russian",
+        "Martini",
+        "Old Fashioned",
+        "Gin and tonic"
+      ],
+      "correctIndex": 0,
+      "source": "Cult film trivia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-scream-voice",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Which voice actor played Ghostface on the phone in 'Scream'?",
+      "choices": [
+        "Roger L. Jackson",
+        "Kevin Conroy",
+        "Mark Hamill",
+        "Robert Englund"
+      ],
+      "correctIndex": 0,
+      "source": "Dimension Films credits",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-lost-world-director",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Who directed 'The Lost World: Jurassic Park'?",
+      "choices": [
+        "Steven Spielberg",
+        "Joe Johnston",
+        "Ron Howard",
+        "Peter Jackson"
+      ],
+      "correctIndex": 0,
+      "source": "Universal credits",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-men-in-black-agent-names",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What letters do the two main MIB agents go by?",
+      "choices": [
+        "J and K",
+        "A and B",
+        "M and N",
+        "S and T"
+      ],
+      "correctIndex": 0,
+      "source": "Sony/Columbia plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-clueless-setting",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "In which U.S. city is 'Clueless' primarily set?",
+      "choices": [
+        "Chicago",
+        "New York",
+        "Los Angeles",
+        "Miami"
+      ],
+      "correctIndex": 2,
+      "source": "Paramount plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-rush-hour-duo",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Which two actors star as the lead cop duo in 'Rush Hour'?",
+      "choices": [
+        "Jackie Chan & Chris Tucker",
+        "Jet Li & Eddie Murphy",
+        "Jackie Chan & Owen Wilson",
+        "Will Smith & Martin Lawrence"
+      ],
+      "correctIndex": 0,
+      "source": "New Line cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-green-mile-actor",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Who played John Coffey in 'The Green Mile'?",
+      "choices": [
+        "Michael Clarke Duncan",
+        "Ving Rhames",
+        "Forest Whitaker",
+        "Samuel L. Jackson"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-iron-giant-voice",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Who voiced the Iron Giant in the 1999 film?",
+      "choices": [
+        "Vin Diesel",
+        "Kevin Michael Richardson",
+        "James Earl Jones",
+        "Liam Neeson"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. animation",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-space-jam-sport",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Which sport is central to 'Space Jam'?",
+      "choices": [
+        "Basketball",
+        "Baseball",
+        "Football",
+        "Hockey"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-faceoff-actors",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Name the two lead actors in 'Face/Off'.",
+      "choices": [
+        "John Travolta & Nicolas Cage",
+        "Bruce Willis & Nicolas Cage",
+        "John Travolta & Keanu Reeves",
+        "Mel Gibson & Bruce Willis"
+      ],
+      "correctIndex": 0,
+      "source": "Paramount cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-phantom-menace-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What year did 'Star Wars: Episode I - The Phantom Menace' release?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 2,
+      "source": "Lucasfilm release",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-american-pie-object",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "'American Pie' opens with which appliance causing Jim trouble?",
+      "choices": [
+        "A webcam",
+        "A VCR",
+        "A microwave",
+        "A toaster"
+      ],
+      "correctIndex": 0,
+      "source": "Universal plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-english-patient-oscars",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "hard",
+      "prompt": "Which film won Best Picture at the 1997 Oscars for 1996 films?",
+      "choices": [
+        "The English Patient",
+        "Fargo",
+        "Jerry Maguire",
+        "Shine"
+      ],
+      "correctIndex": 0,
+      "source": "Academy Awards",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-austin-powers-villain",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Who is the bald villain opposing Austin Powers?",
+      "choices": [
+        "Dr. Evil",
+        "Goldmember",
+        "Number Two",
+        "Fat Bastard"
+      ],
+      "correctIndex": 0,
+      "source": "New Line comedy",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-jumanji-game-type",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "What kind of game unleashes chaos in 'Jumanji'?",
+      "choices": [
+        "Board game",
+        "Card game",
+        "Video game",
+        "Dice game"
+      ],
+      "correctIndex": 0,
+      "source": "TriStar plot",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-blade-daywalker",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Which Marvel character is known as the Daywalker in a 1998 film?",
+      "choices": [
+        "Blade",
+        "Spawn",
+        "Morbius",
+        "Ghost Rider"
+      ],
+      "correctIndex": 0,
+      "source": "New Line/Marvel",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-practical-magic-sisters",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Who played the witch sisters in 'Practical Magic'?",
+      "choices": [
+        "Sandra Bullock & Nicole Kidman",
+        "Meg Ryan & Julia Roberts",
+        "Sandra Bullock & Demi Moore",
+        "Nicole Kidman & Julianne Moore"
+      ],
+      "correctIndex": 0,
+      "source": "Warner Bros. cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-tomorrow-never-dies-bond",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "Which actor portrayed James Bond in 'GoldenEye' and 'Tomorrow Never Dies'?",
+      "choices": [
+        "Pierce Brosnan",
+        "Sean Connery",
+        "Timothy Dalton",
+        "Roger Moore"
+      ],
+      "correctIndex": 0,
+      "source": "MGM/Eon",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-movies-fifth-element",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Which 1997 sci-fi film starred Bruce Willis as Korben Dallas?",
+      "choices": [
+        "The Fifth Element",
+        "12 Monkeys",
+        "Armageddon",
+        "The Jackal"
+      ],
+      "correctIndex": 0,
+      "source": "Gaumont/Columbia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-spice-girls-debut",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What was the Spice Girls' debut single?",
+      "choices": [
+        "Wannabe",
+        "Say You'll Be There",
+        "2 Become 1",
+        "Spice Up Your Life"
+      ],
+      "correctIndex": 0,
+      "source": "Virgin Records release",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-nirvana-nevermind",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "In what year was Nirvana's 'Nevermind' released?",
+      "choices": [
+        "1990",
+        "1991",
+        "1992",
+        "1993"
+      ],
+      "correctIndex": 1,
+      "source": "DGC release",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-teen-spirit-producer",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "Who produced Nirvana's single 'Smells Like Teen Spirit'?",
+      "choices": [
+        "Butch Vig",
+        "Steve Albini",
+        "Rick Rubin",
+        "Jack Endino"
+      ],
+      "correctIndex": 0,
+      "source": "Recording credits",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-pearl-jam-debut",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "What is the title of Pearl Jam's 1991 debut album?",
+      "choices": [
+        "Ten",
+        "Vs.",
+        "Vitalogy",
+        "Yield"
+      ],
+      "correctIndex": 0,
+      "source": "Epic Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-backstreet-back",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which boy band released 'Backstreet's Back'?",
+      "choices": [
+        "Backstreet Boys",
+        "*NSYNC",
+        "98 Degrees",
+        "Five"
+      ],
+      "correctIndex": 0,
+      "source": "Jive Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-nsync-debut",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "'*NSYNC' debuted in the US with which self-titled album year?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 2,
+      "source": "RCA release",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-britney-baby",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What was Britney Spears' breakthrough single?",
+      "choices": [
+        "...Baby One More Time",
+        "Oops!... I Did It Again",
+        "Toxic",
+        "Crazy"
+      ],
+      "correctIndex": 0,
+      "source": "Jive Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-mariah-fantasy",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which 1995 Mariah Carey single sampled Tom Tom Club's 'Genius of Love' and debuted at #1?",
+      "choices": [
+        "Emotions",
+        "Fantasy",
+        "Hero",
+        "Always Be My Baby"
+      ],
+      "correctIndex": 1,
+      "source": "Columbia Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-lauryn-hill-album",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What is Lauryn Hill's 1998 Grammy-winning solo album called?",
+      "choices": [
+        "The Miseducation of Lauryn Hill",
+        "Unplugged",
+        "My Life",
+        "Brown Sugar"
+      ],
+      "correctIndex": 0,
+      "source": "Ruffhouse/Columbia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-tlc-scrubs",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which TLC song warns 'No, I don't want no scrub'?",
+      "choices": [
+        "No Scrubs",
+        "Waterfalls",
+        "Creep",
+        "Unpretty"
+      ],
+      "correctIndex": 0,
+      "source": "Arista/LaFace",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-alanis-single",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which Alanis Morissette single begins with 'I want you to know'?",
+      "choices": [
+        "You Oughta Know",
+        "Ironic",
+        "Hand in My Pocket",
+        "Head Over Feet"
+      ],
+      "correctIndex": 0,
+      "source": "Maverick",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-oasis-rival",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which band was Oasis famously rivaled with in the 90s Britpop scene?",
+      "choices": [
+        "Blur",
+        "Radiohead",
+        "Pulp",
+        "Suede"
+      ],
+      "correctIndex": 0,
+      "source": "Britpop press",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-radiohead-1997",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "Which Radiohead album released in 1997 is often cited among the best of the decade?",
+      "choices": [
+        "OK Computer",
+        "The Bends",
+        "Kid A",
+        "Amnesiac"
+      ],
+      "correctIndex": 0,
+      "source": "Parlophone/Capitol",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-smashing-pumpkins-double",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which double album did The Smashing Pumpkins release in 1995?",
+      "choices": [
+        "Mellon Collie and the Infinite Sadness",
+        "Adore",
+        "Siamese Dream",
+        "Machina"
+      ],
+      "correctIndex": 0,
+      "source": "Virgin Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-soundgarden-hit",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which Soundgarden song won the 1995 Grammy for Best Hard Rock Performance?",
+      "choices": [
+        "Black Hole Sun",
+        "Spoonman",
+        "Fell on Black Days",
+        "Burden in My Hand"
+      ],
+      "correctIndex": 0,
+      "source": "Grammy records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-dr-dre-1992",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which Dr. Dre album popularized G-funk in 1992?",
+      "choices": [
+        "The Chronic",
+        "2001",
+        "Doggystyle",
+        "All Eyez on Me"
+      ],
+      "correctIndex": 0,
+      "source": "Death Row",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-tupac-double",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "Which 1996 double album is often seen as Tupac Shakur's magnum opus?",
+      "choices": [
+        "All Eyez on Me",
+        "Me Against the World",
+        "The Don Killuminati",
+        "Strictly 4 My N.I.G.G.A.Z."
+      ],
+      "correctIndex": 0,
+      "source": "Death Row/Interscope",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-biggie-debut",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "What was The Notorious B.I.G.'s debut album called?",
+      "choices": [
+        "Ready to Die",
+        "Life After Death",
+        "Born Again",
+        "Duets"
+      ],
+      "correctIndex": 0,
+      "source": "Bad Boy Records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-wu-tang-93",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "Which Wu-Tang Clan album introduced 'C.R.E.A.M.'?",
+      "choices": [
+        "Enter the Wu-Tang (36 Chambers)",
+        "Wu-Tang Forever",
+        "Iron Flag",
+        "The W"
+      ],
+      "correctIndex": 0,
+      "source": "Loud/RCA",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-foo-fighters-start",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Dave Grohl founded Foo Fighters after Nirvana; what year was their debut album released?",
+      "choices": [
+        "1994",
+        "1995",
+        "1996",
+        "1997"
+      ],
+      "correctIndex": 1,
+      "source": "Capitol/Roswell",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-green-day-breakout",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which Green Day album with 'Basket Case' broke them into the mainstream?",
+      "choices": [
+        "Dookie",
+        "Insomniac",
+        "Nimrod",
+        "Warning"
+      ],
+      "correctIndex": 0,
+      "source": "Reprise",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-ricky-martin-cup",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which Ricky Martin hit was tied to the 1998 World Cup?",
+      "choices": [
+        "The Cup of Life",
+        "Livin' la Vida Loca",
+        "She Bangs",
+        "Maria"
+      ],
+      "correctIndex": 0,
+      "source": "Columbia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-madonna-lapdance",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which Madonna album featured 'Ray of Light'?",
+      "choices": [
+        "Ray of Light",
+        "Bedtime Stories",
+        "Music",
+        "Erotica"
+      ],
+      "correctIndex": 0,
+      "source": "Maverick",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-cher-autotune",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which 1998 Cher single popularized Auto-Tune as an effect?",
+      "choices": [
+        "Believe",
+        "Strong Enough",
+        "All or Nothing",
+        "One by One"
+      ],
+      "correctIndex": 0,
+      "source": "Warner",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-boyzIImen-ballad",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which Boyz II Men single spent a record 16 weeks at #1 in 1994?",
+      "choices": [
+        "I'll Make Love to You",
+        "End of the Road",
+        "On Bended Knee",
+        "Water Runs Dry"
+      ],
+      "correctIndex": 0,
+      "source": "Motown",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-ace-of-base",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which Swedish group had hits like 'The Sign' and 'All That She Wants'?",
+      "choices": [
+        "Ace of Base",
+        "ABBA",
+        "Aqua",
+        "Roxette"
+      ],
+      "correctIndex": 0,
+      "source": "Arista",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-hanson-hit",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What was Hanson's breakout single?",
+      "choices": [
+        "MMMBop",
+        "Where's the Love",
+        "I Will Come to You",
+        "Penny & Me"
+      ],
+      "correctIndex": 0,
+      "source": "Mercury",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-cardigans-song",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which Cardigans song featured in 'Romeo + Juliet'?",
+      "choices": [
+        "Lovefool",
+        "My Favourite Game",
+        "Erase/Rewind",
+        "Carnival"
+      ],
+      "correctIndex": 0,
+      "source": "Soundtrack credit",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-prince-1999",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "Which Prince single title literally refers to the year 1999?",
+      "choices": [
+        "1999",
+        "Purple Rain",
+        "Kiss",
+        "Cream"
+      ],
+      "correctIndex": 0,
+      "source": "Warner",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-beck-losers",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which 1994 Beck single declared 'I'm a loser baby'?",
+      "choices": [
+        "Loser",
+        "Devils Haircut",
+        "Where It's At",
+        "E-Pro"
+      ],
+      "correctIndex": 0,
+      "source": "Geffen",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-savage-garden",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which duo sang 'Truly Madly Deeply'?",
+      "choices": [
+        "Savage Garden",
+        "Roxette",
+        "Sixpence None the Richer",
+        "Wilson Phillips"
+      ],
+      "correctIndex": 0,
+      "source": "Columbia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-sinead-prince",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "'Nothing Compares 2 U' was penned by which artist?",
+      "choices": [
+        "Prince",
+        "Bono",
+        "David Bowie",
+        "Sting"
+      ],
+      "correctIndex": 0,
+      "source": "Songwriting credit",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-seal-batman",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Seal's 'Kiss from a Rose' was re-released for which 90s Batman film soundtrack?",
+      "choices": [
+        "Batman Forever",
+        "Batman Returns",
+        "Batman & Robin",
+        "Batman Begins"
+      ],
+      "correctIndex": 0,
+      "source": "Warner soundtrack",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-erykah-badu",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Erykah Badu's debut album title?",
+      "choices": [
+        "Baduizm",
+        "Mama's Gun",
+        "Worldwide Underground",
+        "Badu Live"
+      ],
+      "correctIndex": 0,
+      "source": "Kedar/Universal",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-sarah-mclachlan-festival",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What touring festival for female artists did Sarah McLachlan found?",
+      "choices": [
+        "Lilith Fair",
+        "Warped Tour",
+        "Lollapalooza",
+        "Ozzfest"
+      ],
+      "correctIndex": 0,
+      "source": "Festival history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-celine-dion-blockbuster",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "Which Celine Dion song was the love theme for 'Titanic'?",
+      "choices": [
+        "My Heart Will Go On",
+        "Because You Loved Me",
+        "The Power of Love",
+        "That's the Way It Is"
+      ],
+      "correctIndex": 0,
+      "source": "Soundtrack",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-daft-punk-debut",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "hard",
+      "prompt": "What is the name of Daft Punk's 1997 debut album?",
+      "choices": [
+        "Homework",
+        "Discovery",
+        "Human After All",
+        "Alive"
+      ],
+      "correctIndex": 0,
+      "source": "Virgin",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-music-destinys-child",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Which 1999 single became Destiny's Child's first #1 hit?",
+      "choices": [
+        "Bills, Bills, Bills",
+        "Say My Name",
+        "Survivor",
+        "Jumpin' Jumpin'"
+      ],
+      "correctIndex": 0,
+      "source": "Columbia",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-friends-premiere",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "In what year did 'Friends' premiere on NBC?",
       "choices": [
         "1993",
         "1994",
         "1995",
         "1996"
       ],
-      "correctIndex": 2,
-      "source": "Microsoft product timeline",
+      "correctIndex": 1,
+      "source": "NBC archives",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-Sports-chicago-bulls-championships-1991-1998",
+      "id": "90s-tv-seinfeld-finale",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "In what year did 'Seinfeld' air its series finale?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 2,
+      "source": "NBC archives",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-xfiles-agents",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Name the two lead agents in 'The X-Files'.",
+      "choices": [
+        "Mulder and Scully",
+        "Skinner and Krycek",
+        "Doggett and Reyes",
+        "Riggs and Murtaugh"
+      ],
+      "correctIndex": 0,
+      "source": "Fox cast",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-fresh-prince-city",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Where did Will move in 'The Fresh Prince of Bel-Air'?",
+      "choices": [
+        "Bel-Air",
+        "Beverly Hills",
+        "Compton",
+        "Brooklyn"
+      ],
+      "correctIndex": 0,
+      "source": "NBC sitcom",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-sopranos-premiere",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "Which year did 'The Sopranos' debut on HBO?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 2,
+      "source": "HBO archives",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-south-park-first",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "What year did 'South Park' premiere?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 1,
+      "source": "Comedy Central",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-simpsons-debut",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "'The Simpsons' first aired as shorts in 1989, but which decade cemented its early golden years?",
+      "choices": [
+        "1990s",
+        "2000s",
+        "1980s",
+        "2010s"
+      ],
+      "correctIndex": 0,
+      "source": "Fox animation",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-buffy-premiere",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "In what year did 'Buffy the Vampire Slayer' TV series debut?",
+      "choices": [
+        "1995",
+        "1996",
+        "1997",
+        "1998"
+      ],
+      "correctIndex": 2,
+      "source": "The WB",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-er-location",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "In which city is 'ER' set?",
+      "choices": [
+        "Chicago",
+        "New York",
+        "Seattle",
+        "Boston"
+      ],
+      "correctIndex": 0,
+      "source": "NBC drama",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-frasier-city",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "'Frasier' is set in which city?",
+      "choices": [
+        "Seattle",
+        "Boston",
+        "San Francisco",
+        "Portland"
+      ],
+      "correctIndex": 0,
+      "source": "NBC sitcom",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-boy-meets-world",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Who is the main character of 'Boy Meets World'?",
+      "choices": [
+        "Cory Matthews",
+        "Shawn Hunter",
+        "Eric Matthews",
+        "Topanga Lawrence"
+      ],
+      "correctIndex": 0,
+      "source": "ABC sitcom",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-dawsons-creek",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which network aired 'Dawson's Creek'?",
+      "choices": [
+        "The WB",
+        "UPN",
+        "Fox",
+        "ABC"
+      ],
+      "correctIndex": 0,
+      "source": "Network history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-sabrina-cat",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "What is the name of Sabrina's talking cat?",
+      "choices": [
+        "Salem",
+        "Shadow",
+        "Midnight",
+        "Binx"
+      ],
+      "correctIndex": 0,
+      "source": "ABC/UPN sitcom",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-power-rangers",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which color Ranger led the original 'Mighty Morphin Power Rangers'?",
+      "choices": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ],
+      "correctIndex": 0,
+      "source": "Fox Kids",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-rugrats-channel",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which network aired 'Rugrats'?",
+      "choices": [
+        "Nickelodeon",
+        "Cartoon Network",
+        "Disney Channel",
+        "Fox Kids"
+      ],
+      "correctIndex": 0,
+      "source": "Nickelodeon",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-hey-arnold",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "What is the shape of Arnold's hat in 'Hey Arnold!'?",
+      "choices": [
+        "Blue cap",
+        "Red beanie",
+        "Green bowler",
+        "Cowboy hat"
+      ],
+      "correctIndex": 0,
+      "source": "Nickelodeon",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-pokemon-premiere",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "What year did the 'Pokemon' anime first air in Japan?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 0,
+      "source": "TV Tokyo",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-golden-girls-end",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "Which year did 'The Golden Girls' end its run?",
+      "choices": [
+        "1990",
+        "1991",
+        "1992",
+        "1993"
+      ],
+      "correctIndex": 2,
+      "source": "NBC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-beavis-butthead",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which channel aired 'Beavis and Butt-Head'?",
+      "choices": [
+        "MTV",
+        "VH1",
+        "Comedy Central",
+        "Fox"
+      ],
+      "correctIndex": 0,
+      "source": "MTV",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-eureekas-castle",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "Which children's edutainment show featured a talking blue-haired puppet named Eureeka?",
+      "choices": [
+        "Eureeka's Castle",
+        "Blue's Clues",
+        "Gullah Gullah Island",
+        "Lamb Chop's Play-Along"
+      ],
+      "correctIndex": 0,
+      "source": "Nick Jr.",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-blues-clues-host",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Who was the original host of 'Blue's Clues'?",
+      "choices": [
+        "Steve",
+        "Joe",
+        "Josh",
+        "Bob"
+      ],
+      "correctIndex": 0,
+      "source": "Nick Jr.",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-late-night-war",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which two hosts were central to the 90s 'late-night wars'?",
+      "choices": [
+        "Jay Leno & David Letterman",
+        "Conan O'Brien & Jon Stewart",
+        "Jay Leno & Conan O'Brien",
+        "David Letterman & Craig Kilborn"
+      ],
+      "correctIndex": 0,
+      "source": "TV history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-price-is-right-host",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Who hosted 'The Price Is Right' through the 90s?",
+      "choices": [
+        "Bob Barker",
+        "Drew Carey",
+        "Pat Sajak",
+        "Alex Trebek"
+      ],
+      "correctIndex": 0,
+      "source": "CBS",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-jeopardy-host",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Who hosted 'Jeopardy!' in the 90s?",
+      "choices": [
+        "Alex Trebek",
+        "Ken Jennings",
+        "Pat Sajak",
+        "Regis Philbin"
+      ],
+      "correctIndex": 0,
+      "source": "Syndication",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-triple-dare",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "On which network could you watch 'Double Dare' and 'Legends of the Hidden Temple'?",
+      "choices": [
+        "Nickelodeon",
+        "Disney Channel",
+        "PBS",
+        "Fox"
+      ],
+      "correctIndex": 0,
+      "source": "Cable history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-twin-peaks",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "Who killed Laura Palmer?",
+      "choices": [
+        "Leland Palmer",
+        "Ben Horne",
+        "Dale Cooper",
+        "Bobby Briggs"
+      ],
+      "correctIndex": 0,
+      "source": "ABC mystery",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-seventh-heaven",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which family drama debuted on The WB in 1996?",
+      "choices": [
+        "7th Heaven",
+        "Gilmore Girls",
+        "Party of Five",
+        "Everwood"
+      ],
+      "correctIndex": 0,
+      "source": "The WB",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-full-house-theme",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which San Francisco-set sitcom featured the Tanner family?",
+      "choices": [
+        "Full House",
+        "Step by Step",
+        "Family Matters",
+        "Home Improvement"
+      ],
+      "correctIndex": 0,
+      "source": "ABC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-home-improvement-host",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Tim Allen's character hosted which fictional show within 'Home Improvement'?",
+      "choices": [
+        "Tool Time",
+        "Fix It Fast",
+        "Home Time",
+        "DIY Live"
+      ],
+      "correctIndex": 0,
+      "source": "ABC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-step-by-step-friday",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which programming block aired 'Step by Step' and 'Family Matters'?",
+      "choices": [
+        "TGIF",
+        "SNICK",
+        "Must See TV",
+        "Adult Swim"
+      ],
+      "correctIndex": 0,
+      "source": "ABC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-snl-cast",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which comedian joined 'SNL' in 1995 and later starred in 'Superstar'?",
+      "choices": [
+        "Molly Shannon",
+        "Tina Fey",
+        "Cheri Oteri",
+        "Ana Gasteyer"
+      ],
+      "correctIndex": 0,
+      "source": "NBC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-mad-about-you",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Who played the married Buchmans on 'Mad About You'?",
+      "choices": [
+        "Paul Reiser & Helen Hunt",
+        "Kelsey Grammer & Jane Leeves",
+        "Jerry Seinfeld & Julia Louis-Dreyfus",
+        "Tim Allen & Patricia Richardson"
+      ],
+      "correctIndex": 0,
+      "source": "NBC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-baywatch-location",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which setting is 'Baywatch' famous for?",
+      "choices": [
+        "Los Angeles beaches",
+        "Miami beaches",
+        "Hawaii beaches",
+        "New Jersey beaches"
+      ],
+      "correctIndex": 0,
+      "source": "Syndication",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-law-and-order",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which two-note sound effect is iconic to 'Law & Order'?",
+      "choices": [
+        "Dun-dun",
+        "Chime-chime",
+        "Thump-thump",
+        "Bing-bong"
+      ],
+      "correctIndex": 0,
+      "source": "NBC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-freaks-and-geeks",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "hard",
+      "prompt": "Which network canceled 'Freaks and Geeks' after one season?",
+      "choices": [
+        "NBC",
+        "Fox",
+        "UPN",
+        "ABC"
+      ],
+      "correctIndex": 0,
+      "source": "TV history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-dragonball-z-dub",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Which channel popularized the 'Dragon Ball Z' dub in North America in the late 90s?",
+      "choices": [
+        "Toonami/Cartoon Network",
+        "Fox Kids",
+        "UPN",
+        "WB Kids"
+      ],
+      "correctIndex": 0,
+      "source": "Cartoon Network",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-arthur-anthem",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which children's show opened with the lyric 'Everyday when you're walking down the street'?",
+      "choices": [
+        "Arthur",
+        "Barney",
+        "Sesame Street",
+        "Teletubbies"
+      ],
+      "correctIndex": 0,
+      "source": "PBS",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-who-wants-millionaire",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Who hosted the original US run of 'Who Wants to Be a Millionaire' starting in 1999?",
+      "choices": [
+        "Regis Philbin",
+        "Meredith Vieira",
+        "Chris Harrison",
+        "Cedric the Entertainer"
+      ],
+      "correctIndex": 0,
+      "source": "ABC",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tv-barney",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "Which purple dinosaur led a 90s children's show about sharing and caring?",
+      "choices": [
+        "Barney",
+        "Dino",
+        "Figment",
+        "Reptar"
+      ],
+      "correctIndex": 0,
+      "source": "PBS",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-windows-95",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "In which year did Microsoft launch Windows 95?",
+      "choices": [
+        "1994",
+        "1995",
+        "1996",
+        "1997"
+      ],
+      "correctIndex": 1,
+      "source": "Microsoft timeline",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-nintendo-64",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "What year did the Nintendo 64 launch in North America?",
+      "choices": [
+        "1995",
+        "1996",
+        "1997",
+        "1998"
+      ],
+      "correctIndex": 1,
+      "source": "Nintendo release",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-playstation-launch",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which company made the original PlayStation console?",
+      "choices": [
+        "Sony",
+        "Sega",
+        "Nintendo",
+        "Atari"
+      ],
+      "correctIndex": 0,
+      "source": "Console history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-dreamcast-release",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Which year did Sega release the Dreamcast in Japan?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 1,
+      "source": "Sega timeline",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-game-boy-color",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "The Game Boy Color launched in which year?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 2,
+      "source": "Nintendo timeline",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-tamagotchi",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "What virtual pet craze was invented by Bandai in 1996?",
+      "choices": [
+        "Tamagotchi",
+        "Digimon",
+        "Neopets",
+        "Giga Pet"
+      ],
+      "correctIndex": 0,
+      "source": "Bandai",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-dialup-speed",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "What was the common maximum speed of dial-up modems by the late 90s?",
+      "choices": [
+        "14.4 kbps",
+        "28.8 kbps",
+        "33.6 kbps",
+        "56 kbps"
+      ],
+      "correctIndex": 3,
+      "source": "Consumer modem specs",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-aol-cds",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which ISP flooded mailboxes with trial CDs in the 90s?",
+      "choices": [
+        "AOL",
+        "CompuServe",
+        "Prodigy",
+        "NetZero"
+      ],
+      "correctIndex": 0,
+      "source": "ISP marketing",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-netscape-ipo",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "In what year did Netscape go public, igniting the dot-com boom?",
+      "choices": [
+        "1994",
+        "1995",
+        "1996",
+        "1997"
+      ],
+      "correctIndex": 1,
+      "source": "IPO history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-google-founded",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "What year was Google founded?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 2,
+      "source": "Company history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-ebay-founded",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Which site began as AuctionWeb in 1995?",
+      "choices": [
+        "eBay",
+        "Amazon",
+        "Etsy",
+        "Overstock"
+      ],
+      "correctIndex": 0,
+      "source": "Startup history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-amazon-books",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Amazon launched in 1995 primarily selling what?",
+      "choices": [
+        "Books",
+        "CDs",
+        "Toys",
+        "Electronics"
+      ],
+      "correctIndex": 0,
+      "source": "Amazon origin",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-usb-1",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "USB 1.0 was standardized in which year?",
+      "choices": [
+        "1994",
+        "1995",
+        "1996",
+        "1997"
+      ],
+      "correctIndex": 2,
+      "source": "USB IF",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-imac-g3",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Which 1998 Apple product popularized the colorful all-in-one desktop?",
+      "choices": [
+        "iMac G3",
+        "Power Mac G4 Cube",
+        "eMac",
+        "iBook"
+      ],
+      "correctIndex": 0,
+      "source": "Apple history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-yahoo-name",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Yahoo! originally branded itself as what type of site?",
+      "choices": [
+        "Web directory",
+        "Shopping mall",
+        "Gaming portal",
+        "Social network"
+      ],
+      "correctIndex": 0,
+      "source": "Early web",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-napster",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Napster allowed users to share which file format peer-to-peer?",
+      "choices": [
+        "MP3",
+        "WAV",
+        "AAC",
+        "FLAC"
+      ],
+      "correctIndex": 0,
+      "source": "File sharing",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-mp3-player",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "Which 1998 player is often credited as the first commercially produced MP3 player?",
+      "choices": [
+        "MPMan",
+        "iPod",
+        "Zune",
+        "Rio Karma"
+      ],
+      "correctIndex": 0,
+      "source": "Gadget history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-dvd-debut",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "DVD movie discs hit the US market in which year?",
+      "choices": [
+        "1996",
+        "1997",
+        "1998",
+        "1999"
+      ],
+      "correctIndex": 1,
+      "source": "Home video timeline",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-palm-pilot",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Which handheld organizer series launched in 1996?",
+      "choices": [
+        "Palm Pilot",
+        "BlackBerry",
+        "Newton",
+        "Psion"
+      ],
+      "correctIndex": 0,
+      "source": "PDA history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-blackberry-pager",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "Research In Motion released its first BlackBerry device in 1999; what kind was it?",
+      "choices": [
+        "Two-way pager",
+        "Smartphone",
+        "Laptop",
+        "PDA"
+      ],
+      "correctIndex": 0,
+      "source": "Mobile history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-first-sms",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "The first SMS text message was sent in which year?",
+      "choices": [
+        "1992",
+        "1993",
+        "1994",
+        "1995"
+      ],
+      "correctIndex": 0,
+      "source": "Telecom history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-hubble-launch",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "The Hubble Space Telescope launched in which year?",
+      "choices": [
+        "1990",
+        "1991",
+        "1992",
+        "1993"
+      ],
+      "correctIndex": 0,
+      "source": "NASA",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-playstation-cd",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "What media format did the original PlayStation use for games?",
+      "choices": [
+        "CD-ROM",
+        "Cartridge",
+        "DVD",
+        "Blu-ray"
+      ],
+      "correctIndex": 0,
+      "source": "Console specs",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-sega-saturn",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "hard",
+      "prompt": "Sega Saturn launched first in which region in 1994?",
+      "choices": [
+        "Japan",
+        "North America",
+        "Europe",
+        "Australia"
+      ],
+      "correctIndex": 0,
+      "source": "Console timeline",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-winamp",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which Windows media player popularized customizable skins in 1997?",
+      "choices": [
+        "Winamp",
+        "RealPlayer",
+        "Windows Media Player",
+        "QuickTime"
+      ],
+      "correctIndex": 0,
+      "source": "Software history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-icq",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which instant messaging service used the alert 'uh-oh'?",
+      "choices": [
+        "ICQ",
+        "AIM",
+        "MSN Messenger",
+        "Yahoo Messenger"
+      ],
+      "correctIndex": 0,
+      "source": "IM history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-aol-aim",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "What does the 'I' in AIM stand for?",
+      "choices": [
+        "Instant",
+        "Internet",
+        "Interactive",
+        "Integrated"
+      ],
+      "correctIndex": 0,
+      "source": "AOL",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-geocities",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "Which service let users build free personal webpages in themed 'neighborhoods'?",
+      "choices": [
+        "GeoCities",
+        "Myspace",
+        "LiveJournal",
+        "Blogger"
+      ],
+      "correctIndex": 0,
+      "source": "Early web",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-altavista",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "AltaVista was primarily what kind of web service?",
+      "choices": [
+        "Search engine",
+        "E-mail provider",
+        "Chat client",
+        "Online store"
+      ],
+      "correctIndex": 0,
+      "source": "Search history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-tech-iexplorer",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Which web browser did Microsoft bundle with Windows to compete with Netscape?",
+      "choices": [
+        "Internet Explorer",
+        "Mosaic",
+        "Opera",
+        "Safari"
+      ],
+      "correctIndex": 0,
+      "source": "Browser wars",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-bulls-titles",
       "category": "90s Pop Culture",
       "topic": "Sports",
-      "difficulty": "medium",
-      "prompt": "How many NBA championships did the Chicago Bulls win from 1991 to 1998?",
+      "difficulty": "easy",
+      "prompt": "How many NBA titles did the Chicago Bulls win in the 90s?",
       "choices": [
         "4",
         "5",
@@ -190,35 +2812,491 @@
       }
     },
     {
-      "id": "90s-Sports-world-cup-1998-winner",
+      "id": "90s-sports-dream-team",
       "category": "90s Pop Culture",
       "topic": "Sports",
       "difficulty": "easy",
-      "prompt": "Which country won the 1998 FIFA World Cup?",
+      "prompt": "Which Olympics featured the original USA 'Dream Team'?",
       "choices": [
-        "Brazil",
+        "1992 Barcelona",
+        "1994 Lillehammer",
+        "1996 Atlanta",
+        "1998 Nagano"
+      ],
+      "correctIndex": 0,
+      "source": "Olympic history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1999-wwc-winner",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which country won the 1999 FIFA Women's World Cup?",
+      "choices": [
+        "USA",
+        "China",
+        "Germany",
+        "Norway"
+      ],
+      "correctIndex": 0,
+      "source": "FIFA records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1998-world-cup",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Who won the 1998 FIFA Men's World Cup?",
+      "choices": [
         "France",
+        "Brazil",
         "Germany",
         "Argentina"
       ],
-      "correctIndex": 1,
-      "source": "FIFA World Cup records",
+      "correctIndex": 0,
+      "source": "FIFA records",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-Fashion-flannel-grunge-trend",
+      "id": "90s-sports-1994-world-cup-host",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which country hosted the 1994 FIFA World Cup?",
+      "choices": [
+        "USA",
+        "France",
+        "Italy",
+        "Japan"
+      ],
+      "correctIndex": 0,
+      "source": "FIFA records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1994-mlb-strike",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which major US sports league canceled its 1994 postseason due to a strike?",
+      "choices": [
+        "MLB",
+        "NFL",
+        "NBA",
+        "NHL"
+      ],
+      "correctIndex": 0,
+      "source": "Sports labor history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1995-rugby",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which nation won the 1995 Rugby World Cup?",
+      "choices": [
+        "South Africa",
+        "New Zealand",
+        "England",
+        "Australia"
+      ],
+      "correctIndex": 0,
+      "source": "Rugby records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-spurs-first-title",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which year did the San Antonio Spurs win their first NBA title?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 2,
+      "source": "NBA finals",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-home-run-race",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which two sluggers battled in the 1998 MLB home run race?",
+      "choices": [
+        "Mark McGwire & Sammy Sosa",
+        "Barry Bonds & Ken Griffey Jr.",
+        "Alex Rodriguez & Derek Jeter",
+        "Mark McGwire & Barry Bonds"
+      ],
+      "correctIndex": 0,
+      "source": "MLB season",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-tiger-first-major",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which major did Tiger Woods win first in 1997?",
+      "choices": [
+        "The Masters",
+        "US Open",
+        "Open Championship",
+        "PGA Championship"
+      ],
+      "correctIndex": 0,
+      "source": "Golf records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-serena-first-slam",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Serena Williams won her first Grand Slam at which event in 1999?",
+      "choices": [
+        "US Open",
+        "Wimbledon",
+        "Australian Open",
+        "French Open"
+      ],
+      "correctIndex": 0,
+      "source": "Tennis records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-dale-earnhardt",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which NASCAR legend won the 1998 Daytona 500?",
+      "choices": [
+        "Dale Earnhardt",
+        "Jeff Gordon",
+        "Dale Jarrett",
+        "Tony Stewart"
+      ],
+      "correctIndex": 0,
+      "source": "NASCAR records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-96-olympics-city",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which city hosted the 1996 Summer Olympics?",
+      "choices": [
+        "Atlanta",
+        "Sydney",
+        "Barcelona",
+        "Athens"
+      ],
+      "correctIndex": 0,
+      "source": "Olympic history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-nhl-expansion",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which NHL team joined the league in 1993 as an expansion?",
+      "choices": [
+        "Anaheim Ducks",
+        "Minnesota Wild",
+        "Columbus Blue Jackets",
+        "Nashville Predators"
+      ],
+      "correctIndex": 0,
+      "source": "NHL history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-jordan-retirement",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which sport did Michael Jordan briefly play professionally during his first retirement?",
+      "choices": [
+        "Baseball",
+        "Golf",
+        "Football",
+        "Hockey"
+      ],
+      "correctIndex": 0,
+      "source": "Athlete history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-ufc-origin",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "In which year was UFC 1 held?",
+      "choices": [
+        "1993",
+        "1994",
+        "1995",
+        "1996"
+      ],
+      "correctIndex": 0,
+      "source": "MMA history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1999-champions-league",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "Which club won the 1999 UEFA Champions League final?",
+      "choices": [
+        "Manchester United",
+        "Bayern Munich",
+        "Real Madrid",
+        "Juventus"
+      ],
+      "correctIndex": 0,
+      "source": "UEFA records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1995-nba-mvp",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "Who won the 1995 NBA MVP award?",
+      "choices": [
+        "David Robinson",
+        "Hakeem Olajuwon",
+        "Michael Jordan",
+        "Karl Malone"
+      ],
+      "correctIndex": 0,
+      "source": "NBA awards",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1992-nhl-cup",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which team won the Stanley Cup in 1992?",
+      "choices": [
+        "Pittsburgh Penguins",
+        "Detroit Red Wings",
+        "Dallas Stars",
+        "Colorado Avalanche"
+      ],
+      "correctIndex": 0,
+      "source": "NHL records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1997-world-series",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "Which team won the 1997 World Series?",
+      "choices": [
+        "Florida Marlins",
+        "Cleveland Indians",
+        "New York Yankees",
+        "Atlanta Braves"
+      ],
+      "correctIndex": 0,
+      "source": "MLB records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-wnba-start",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "In which year did the WNBA play its first season?",
+      "choices": [
+        "1997",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "correctIndex": 0,
+      "source": "WNBA history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1991-superbowl",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which team won Super Bowl XXV in January 1991?",
+      "choices": [
+        "New York Giants",
+        "Buffalo Bills",
+        "San Francisco 49ers",
+        "Dallas Cowboys"
+      ],
+      "correctIndex": 0,
+      "source": "NFL records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1993-march-madness",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "hard",
+      "prompt": "Which college won the 1993 NCAA men's basketball championship?",
+      "choices": [
+        "North Carolina",
+        "Duke",
+        "Arkansas",
+        "Michigan"
+      ],
+      "correctIndex": 0,
+      "source": "NCAA records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1999-cycling",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Who won the 1999 Tour de France?",
+      "choices": [
+        "Lance Armstrong",
+        "Jan Ullrich",
+        "Marco Pantani",
+        "Miguel Indurain"
+      ],
+      "correctIndex": 0,
+      "source": "Cycling records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1996-euro",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which country won UEFA Euro 1996?",
+      "choices": [
+        "Germany",
+        "England",
+        "France",
+        "Spain"
+      ],
+      "correctIndex": 0,
+      "source": "UEFA records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-sports-1999-mlb-world-series",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "Which team swept the 1999 World Series?",
+      "choices": [
+        "New York Yankees",
+        "Atlanta Braves",
+        "Cleveland Indians",
+        "New York Mets"
+      ],
+      "correctIndex": 0,
+      "source": "MLB records",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-fashion-flannel-grunge",
       "category": "90s Pop Culture",
       "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Which fashion item became synonymous with the 90s grunge movement?",
+      "prompt": "Which garment became a symbol of 90s grunge style?",
       "choices": [
-        "Flannel shirts",
-        "Bell bottoms",
-        "Polo shirts",
-        "Leather jackets"
+        "Flannel shirt",
+        "Leather jacket",
+        "Blazer",
+        "Parka"
       ],
       "correctIndex": 0,
       "source": "Fashion retrospectives",
@@ -228,16 +3306,92 @@
       }
     },
     {
-      "id": "90s-Fashion-platform-shoes-trend",
+      "id": "90s-fashion-platform-shoes",
       "category": "90s Pop Culture",
       "topic": "Fashion",
-      "difficulty": "medium",
-      "prompt": "Which footwear trend surged in popularity in the late 90s?",
+      "difficulty": "easy",
+      "prompt": "Which footwear trend surged thanks to the Spice Girls?",
       "choices": [
         "Platform shoes",
         "Stilettos",
-        "Wedges",
-        "Clogs"
+        "Loafers",
+        "Kitten heels"
+      ],
+      "correctIndex": 0,
+      "source": "Pop fashion",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-fashion-jnco",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "medium",
+      "prompt": "Which brand popularized ultra-wide-leg jeans in the 90s?",
+      "choices": [
+        "JNCO",
+        "Levi's",
+        "Wrangler",
+        "Lee"
+      ],
+      "correctIndex": 0,
+      "source": "Streetwear history",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-fashion-choker",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "easy",
+      "prompt": "Which neck accessory became a signature 90s look?",
+      "choices": [
+        "Tattoo choker",
+        "Pearl necklace",
+        "Bow tie",
+        "Ascot"
+      ],
+      "correctIndex": 0,
+      "source": "Trend reports",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-fashion-scrunchie",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "easy",
+      "prompt": "What was the ubiquitous 90s hair tie called?",
+      "choices": [
+        "Scrunchie",
+        "Claw clip",
+        "Headband",
+        "Banana clip"
+      ],
+      "correctIndex": 0,
+      "source": "Hair trends",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-fashion-bucket-hat",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "medium",
+      "prompt": "Which hat style became popular in hip-hop and rave scenes?",
+      "choices": [
+        "Bucket hat",
+        "Fedora",
+        "Beret",
+        "Panama"
       ],
       "correctIndex": 0,
       "source": "Fashion retrospectives",
@@ -247,3572 +3401,418 @@
       }
     },
     {
-      "id": "90s-pop-placeholder-13",
+      "id": "90s-fashion-overalls",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 13 for 90s Pop Culture",
+      "prompt": "How were overalls often worn in the 90s?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "One strap undone",
+        "Both straps crossed",
+        "Tucked into boots",
+        "No straps"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Street style",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-14",
+      "id": "90s-fashion-doc-martens",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 14 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-15",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 15 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-16",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 16 for 90s Pop Culture",
+      "prompt": "Which boot brand was a staple for grunge and alt kids?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-17",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 17 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Doc Martens",
+        "Timberland",
+        "Dr. Scholl's",
+        "Red Wing"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Footwear history",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-18",
+      "id": "90s-fashion-windbreaker",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 18 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-19",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 19 for 90s Pop Culture",
+      "prompt": "What colorful outerwear with nylon material was popular?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-20",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 20 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-21",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 21 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Windbreaker",
+        "Peacoat",
+        "Trench coat",
+        "Poncho"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "90s closets",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-22",
+      "id": "90s-fashion-cargo-pants",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 22 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-23",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 23 for 90s Pop Culture",
+      "prompt": "Which pants with many pockets became mainstream?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-24",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 24 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-25",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 25 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Cargo pants",
+        "Corduroys",
+        "Chinos",
+        "Jeggings"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Streetwear",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-26",
+      "id": "90s-fashion-frosted-tips",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 26 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-27",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 27 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-28",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 28 for 90s Pop Culture",
+      "prompt": "What hair coloring trend was popular among boy-band members?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-29",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 29 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Frosted tips",
+        "Ombre",
+        "Dip dye",
+        "Silver streaks"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Pop hair",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-30",
+      "id": "90s-fashion-butterfly-clips",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 30 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-31",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 31 for 90s Pop Culture",
+      "prompt": "Which small hair accessory shaped like insects was trendy?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-32",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 32 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-33",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 33 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Butterfly clips",
+        "Bobby pins",
+        "Banana clips",
+        "Clamps"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Hair trends",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-34",
+      "id": "90s-fashion-tommy-logo",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 34 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-35",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 35 for 90s Pop Culture",
+      "prompt": "Which brand plastered big flag logos on tees and jackets?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-36",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 36 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-37",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 37 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Tommy Hilfiger",
+        "Polo Ralph Lauren",
+        "Guess",
+        "FUBU"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Logo mania",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-38",
+      "id": "90s-fashion-fubu",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 38 for 90s Pop Culture",
+      "prompt": "Which hip-hop brand stands for 'For Us, By Us'?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-39",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 39 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-40",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 40 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-41",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 41 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "FUBU",
+        "Karl Kani",
+        "Sean John",
+        "Phat Farm"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Streetwear",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-42",
+      "id": "90s-fashion-chain-wallet",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 42 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-43",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 43 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-44",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 44 for 90s Pop Culture",
+      "prompt": "Which accessory dangled from many jeans belts loops?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-45",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 45 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Chain wallet",
+        "Pocket watch",
+        "Suspenders",
+        "Key fob"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Alt fashion",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-46",
+      "id": "90s-fashion-puka-shell",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 46 for 90s Pop Culture",
+      "prompt": "Which necklace made of small white shells was a surfer staple?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-47",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 47 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-48",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 48 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-49",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 49 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Puka shell",
+        "Pearl strand",
+        "Dog tags",
+        "Beads"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Beach style",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-50",
+      "id": "90s-fashion-mood-ring",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 50 for 90s Pop Culture",
+      "prompt": "Which ring claimed to change color with your emotions?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-51",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 51 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-52",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 52 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-53",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 53 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Mood ring",
+        "Claddagh ring",
+        "Spinner ring",
+        "Promise ring"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Accessory trends",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-54",
+      "id": "90s-fashion-slap-bracelet",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 54 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-55",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 55 for 90s Pop Culture",
+      "prompt": "Which bracelet snapped around the wrist?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-56",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 56 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-57",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 57 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Slap bracelet",
+        "Bangle",
+        "Cuff",
+        "Charm bracelet"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Schoolyard trends",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-58",
+      "id": "90s-fashion-velour-tracksuit",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 58 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-59",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 59 for 90s Pop Culture",
+      "prompt": "Which plush tracksuit fabric trended late-90s into 2000s?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-60",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 60 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-61",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 61 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Velour",
+        "Denim",
+        "Corduroy",
+        "Leather"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Athleisure",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-62",
+      "id": "90s-fashion-adidas-tearaway",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 62 for 90s Pop Culture",
+      "prompt": "Which sporty pants had snap buttons down the legs?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-63",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 63 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-64",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 64 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-65",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 65 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Adidas tear-away pants",
+        "Cargo joggers",
+        "Yoga pants",
+        "Culottes"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Sportswear",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-66",
+      "id": "90s-fashion-bandana",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 66 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-67",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 67 for 90s Pop Culture",
+      "prompt": "Which head/neck accessory was tied by rappers and skaters alike?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-68",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 68 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-69",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 69 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Bandana",
+        "Ascot",
+        "Cravat",
+        "Scarf"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Street style",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-70",
+      "id": "90s-fashion-mini-backpack",
       "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 70 for 90s Pop Culture",
+      "prompt": "Which small bag style replaced purses for many teens?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-71",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 71 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-72",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 72 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-73",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 73 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Mini backpack",
+        "Messenger bag",
+        "Fanny pack",
+        "Clutch"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Teen accessories",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-74",
+      "id": "90s-fashion-fanny-pack",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 74 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-75",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 75 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-76",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 76 for 90s Pop Culture",
+      "prompt": "Which waist-worn bag saw a 90s boom?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-77",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 77 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Fanny pack",
+        "Satchel",
+        "Duffel",
+        "Tote"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Travel fashion",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-78",
+      "id": "90s-fashion-denim-on-denim",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 78 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-79",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 79 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-80",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 80 for 90s Pop Culture",
+      "prompt": "What is the nickname for wearing denim jacket and jeans together?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-81",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 81 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Canadian tuxedo",
+        "Texas tux",
+        "Denim duo",
+        "Blue suit"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Style slang",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-82",
+      "id": "90s-fashion-raver-beads",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 82 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-83",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 83 for 90s Pop Culture",
+      "prompt": "What DIY bead bracelets did ravers exchange?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-84",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 84 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-85",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 85 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Kandi",
+        "Charms",
+        "Loom bands",
+        "Friendship cuffs"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Rave culture",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-86",
+      "id": "90s-fashion-crimped-hair",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 86 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-87",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 87 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-88",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "easy",
-      "prompt": "Placeholder question 88 for 90s Pop Culture",
+      "prompt": "What heat-styling trend created zigzag hair texture?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-89",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 89 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Crimped hair",
+        "Perm",
+        "Finger waves",
+        "Straightening"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Hair trends",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-90",
+      "id": "90s-fashion-spaghetti-strap",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 90 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-91",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 91 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-92",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "medium",
-      "prompt": "Placeholder question 92 for 90s Pop Culture",
+      "prompt": "Which dress style with thin straps was a 90s staple?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-93",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 93 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Slip dress",
+        "Ball gown",
+        "Peplum dress",
+        "Maxi dress"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
+      "source": "Runway history",
       "media": {
         "image": null,
         "audio": null
       }
     },
     {
-      "id": "90s-pop-placeholder-94",
+      "id": "90s-fashion-sheer-top",
       "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 94 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-95",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 95 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-96",
-      "category": "90s Pop Culture",
-      "topic": "General",
+      "topic": "Fashion",
       "difficulty": "hard",
-      "prompt": "Placeholder question 96 for 90s Pop Culture",
+      "prompt": "Which layering trend paired sheer tops over visible tanks?",
       "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-97",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 97 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
+        "Mesh layering",
+        "Power dressing",
+        "Color blocking",
+        "Prairie layering"
       ],
       "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-98",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 98 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-99",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 99 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-100",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 100 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-101",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 101 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-102",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 102 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-103",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 103 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-104",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 104 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-105",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 105 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-106",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 106 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-107",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 107 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-108",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 108 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-109",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 109 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-110",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 110 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-111",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 111 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-112",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 112 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-113",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 113 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-114",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 114 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-115",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 115 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-116",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 116 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-117",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 117 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-118",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 118 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-119",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 119 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-120",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 120 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-121",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 121 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-122",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 122 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-123",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 123 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-124",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 124 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-125",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 125 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-126",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 126 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-127",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 127 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-128",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 128 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-129",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 129 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-130",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 130 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-131",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 131 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-132",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 132 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-133",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 133 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-134",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 134 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-135",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 135 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-136",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 136 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-137",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 137 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-138",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 138 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-139",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 139 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-140",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 140 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-141",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 141 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-142",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 142 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-143",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 143 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-144",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 144 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-145",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 145 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-146",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 146 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-147",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 147 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-148",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 148 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-149",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 149 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-150",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 150 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-151",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 151 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-152",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 152 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-153",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 153 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-154",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 154 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-155",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 155 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-156",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 156 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-157",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 157 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-158",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 158 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-159",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 159 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-160",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 160 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-161",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 161 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-162",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 162 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-163",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 163 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-164",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 164 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-165",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 165 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-166",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 166 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-167",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 167 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-168",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 168 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-169",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 169 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-170",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 170 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-171",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 171 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-172",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 172 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-173",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 173 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-174",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 174 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-175",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 175 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-176",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 176 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-177",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 177 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-178",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 178 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-179",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 179 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-180",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 180 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-181",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 181 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-182",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 182 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-183",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 183 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-184",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 184 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-185",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 185 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-186",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 186 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-187",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 187 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-188",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 188 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-189",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 189 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-190",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 190 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-191",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 191 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-192",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 192 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-193",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 193 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-194",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 194 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-195",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 195 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-196",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 196 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-197",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 197 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 0,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-198",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "hard",
-      "prompt": "Placeholder question 198 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 1,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-199",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "easy",
-      "prompt": "Placeholder question 199 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 2,
-      "source": "placeholder",
-      "media": {
-        "image": null,
-        "audio": null
-      }
-    },
-    {
-      "id": "90s-pop-placeholder-200",
-      "category": "90s Pop Culture",
-      "topic": "General",
-      "difficulty": "medium",
-      "prompt": "Placeholder question 200 for 90s Pop Culture",
-      "choices": [
-        "Choice A",
-        "Choice B",
-        "Choice C",
-        "Choice D"
-      ],
-      "correctIndex": 3,
-      "source": "placeholder",
+      "source": "90s styling",
       "media": {
         "image": null,
         "audio": null

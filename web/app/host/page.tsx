@@ -33,6 +33,7 @@ export default function HostPage() {
         <label style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 12 }}>
           <span style={{ fontWeight: 600, color: 'var(--text)' }}>Category</span>
           <select value={category} onChange={e => setCategory(e.target.value)}>
+            <option>Any Category</option>
             <option>80s Pop Culture</option>
             <option>80s/90s Movies</option>
             <option>Famous Movie Quotes</option>
