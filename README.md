@@ -48,6 +48,7 @@ npm run dev
 
 ## Deployment
 
+
 ### Frontend (Vercel)
 Deploy the `/web` directory to Vercel. Set environment variables:
 - `NEXT_PUBLIC_API_URL` - Your server API URL (e.g., https://your-server.railway.app)
