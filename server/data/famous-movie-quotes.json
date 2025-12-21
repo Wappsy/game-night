@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "category": "Famous Movie Quotes",
+    "version": "0.1.0",
+    "total": 20,
+    "topics": ["Quotes", "Characters", "Films"],
+    "difficulty": ["easy", "medium", "hard"]
+  },
+  "questions": [
+    {
+      "id": "quotes-ill-be-back",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "easy",
+      "prompt": "Which film popularized the line 'I'll be back'?",
+      "choices": ["Total Recall", "Predator", "The Terminator", "Commando"],
+      "correctIndex": 2,
+      "source": "Orion Pictures — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-may-the-force-be-with-you",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "easy",
+      "prompt": "Which franchise is known for 'May the Force be with you'?",
+      "choices": ["Star Trek", "Star Wars", "Battlestar Galactica", "Dune"],
+      "correctIndex": 1,
+      "source": "Lucasfilm — iconic lines",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-houston-we-have-a-problem",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "medium",
+      "prompt": "Which film features 'Houston, we have a problem'?",
+      "choices": ["The Right Stuff", "Apollo 13", "Gravity", "First Man"],
+      "correctIndex": 1,
+      "source": "Universal Pictures — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-you-cant-handle-the-truth",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "medium",
+      "prompt": "Which film includes 'You can't handle the truth!'?",
+      "choices": ["A Few Good Men", "The Firm", "The Godfather Part III", "Heat"],
+      "correctIndex": 0,
+      "source": "Columbia Pictures — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-life-is-like-a-box-of-chocolates",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "easy",
+      "prompt": "Which film contains 'Life is like a box of chocolates'?",
+      "choices": ["Forrest Gump", "The Green Mile", "Cast Away", "Rain Man"],
+      "correctIndex": 0,
+      "source": "Paramount Pictures — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "quotes-hasta-la-vista-baby",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "medium",
+      "prompt": "Which film features 'Hasta la vista, baby'?",
+      "choices": ["Terminator 2: Judgment Day", "True Lies", "Total Recall", "Predator"],
+      "correctIndex": 0,
+      "source": "TriStar Pictures — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-heres-looking-at-you-kid",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "hard",
+      "prompt": "Which classic film includes 'Here's looking at you, kid'?",
+      "choices": ["Casablanca", "Citizen Kane", "Gone with the Wind", "The Maltese Falcon"],
+      "correctIndex": 0,
+      "source": "Warner Bros. — notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "quotes-toto-ive-a-feeling-were-not-in-kansas-anymore",
+      "category": "Famous Movie Quotes",
+      "topic": "Quotes",
+      "difficulty": "hard",
+      "prompt": "Which film has the line 'Toto, I've a feeling we're not in Kansas anymore'?",
+      "choices": ["The Wizard of Oz", "Mary Poppins", "The Sound of Music", "Chitty Chitty Bang Bang"],
+      "correctIndex": 0,
+      "source": "MGM — notable quotes",
+      "media": {"image": null, "audio": null}
+    }
+  ]
+}

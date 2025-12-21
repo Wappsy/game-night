@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "category": "90s Pop Culture",
+    "version": "0.1.0",
+    "total": 24,
+    "topics": ["Movies", "Music", "TV", "Tech", "Sports", "Fashion"],
+    "difficulty": ["easy", "medium", "hard"]
+  },
+  "questions": [
+    {
+      "id": "90s-Movies-titanic-year",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "easy",
+      "prompt": "In what year was 'Titanic' released?",
+      "choices": ["1995", "1996", "1997", "1998"],
+      "correctIndex": 2,
+      "source": "Paramount/20th Century Fox release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-Movies-the-matrix-directors",
+      "category": "90s Pop Culture",
+      "topic": "Movies",
+      "difficulty": "medium",
+      "prompt": "Who directed 'The Matrix' (1999)?",
+      "choices": ["The Wachowskis", "James Cameron", "Ridley Scott", "Christopher Nolan"],
+      "correctIndex": 0,
+      "source": "Warner Bros. credits",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "90s-Music-spice-girls-debut-single",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "easy",
+      "prompt": "What was the Spice Girls' debut single?",
+      "choices": ["Say You'll Be There", "Wannabe", "2 Become 1", "Spice Up Your Life"],
+      "correctIndex": 1,
+      "source": "Virgin Records release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-Music-nirvana-nevermind-year",
+      "category": "90s Pop Culture",
+      "topic": "Music",
+      "difficulty": "medium",
+      "prompt": "Nirvana's album 'Nevermind' was released in which year?",
+      "choices": ["1990", "1991", "1992", "1993"],
+      "correctIndex": 1,
+      "source": "DGC Records release history",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "90s-TV-friends-premiere-year",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "easy",
+      "prompt": "In what year did 'Friends' first premiere?",
+      "choices": ["1992", "1993", "1994", "1995"],
+      "correctIndex": 2,
+      "source": "NBC broadcast archives",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-TV-the-x-files-leads",
+      "category": "90s Pop Culture",
+      "topic": "TV",
+      "difficulty": "medium",
+      "prompt": "Who are the two FBI agents leading 'The X-Files'?",
+      "choices": ["Mulder & Scully", "Krycek & Skinner", "Doggett & Reyes", "Riggs & Murtaugh"],
+      "correctIndex": 0,
+      "source": "Fox series cast",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "90s-Tech-nokia-3310-release",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "easy",
+      "prompt": "The Nokia 3310 was released around what year?",
+      "choices": ["1998", "1999", "2000", "2001"],
+      "correctIndex": 2,
+      "source": "Nokia device history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-Tech-windows-95-launch",
+      "category": "90s Pop Culture",
+      "topic": "Tech",
+      "difficulty": "medium",
+      "prompt": "Microsoft launched Windows 95 in which year?",
+      "choices": ["1993", "1994", "1995", "1996"],
+      "correctIndex": 2,
+      "source": "Microsoft product timeline",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "90s-Sports-chicago-bulls-championships-1991-1998",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "medium",
+      "prompt": "How many NBA championships did the Chicago Bulls win from 1991 to 1998?",
+      "choices": ["4", "5", "6", "7"],
+      "correctIndex": 2,
+      "source": "NBA records",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-Sports-world-cup-1998-winner",
+      "category": "90s Pop Culture",
+      "topic": "Sports",
+      "difficulty": "easy",
+      "prompt": "Which country won the 1998 FIFA World Cup?",
+      "choices": ["Brazil", "France", "Germany", "Argentina"],
+      "correctIndex": 1,
+      "source": "FIFA World Cup records",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "90s-Fashion-flannel-grunge-trend",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "easy",
+      "prompt": "Which fashion item became synonymous with the 90s grunge movement?",
+      "choices": ["Flannel shirts", "Bell bottoms", "Polo shirts", "Leather jackets"],
+      "correctIndex": 0,
+      "source": "Fashion retrospectives",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "90s-Fashion-platform-shoes-trend",
+      "category": "90s Pop Culture",
+      "topic": "Fashion",
+      "difficulty": "medium",
+      "prompt": "Which footwear trend surged in popularity in the late 90s?",
+      "choices": ["Platform shoes", "Stilettos", "Wedges", "Clogs"],
+      "correctIndex": 0,
+      "source": "Fashion retrospectives",
+      "media": {"image": null, "audio": null}
+    }
+  ]
+}

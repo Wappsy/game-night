@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "category": "80s/90s Movies",
+    "version": "0.1.0",
+    "total": 24,
+    "topics": ["Release Years", "Directors", "Characters", "Awards"],
+    "difficulty": ["easy", "medium", "hard"]
+  },
+  "questions": [
+    {
+      "id": "movies-80s-back-to-the-future-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "easy",
+      "prompt": "In what year was 'Back to the Future' released?",
+      "choices": ["1983", "1985", "1987", "1989"],
+      "correctIndex": 1,
+      "source": "Universal Pictures release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-80s-the-terminator-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "easy",
+      "prompt": "What year did 'The Terminator' premiere?",
+      "choices": ["1982", "1984", "1986", "1988"],
+      "correctIndex": 1,
+      "source": "Orion Pictures release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-80s-aliens-director",
+      "category": "80s/90s Movies",
+      "topic": "Directors",
+      "difficulty": "medium",
+      "prompt": "Who directed 'Aliens' (1986)?",
+      "choices": ["Ridley Scott", "James Cameron", "John Carpenter", "David Cronenberg"],
+      "correctIndex": 1,
+      "source": "20th Century Fox credits",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-80s-beetlejuice-director",
+      "category": "80s/90s Movies",
+      "topic": "Directors",
+      "difficulty": "easy",
+      "prompt": "Who directed 'Beetlejuice' (1988)?",
+      "choices": ["Tim Burton", "Joe Dante", "Ivan Reitman", "Richard Donner"],
+      "correctIndex": 0,
+      "source": "Warner Bros. credits",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "movies-90s-jurassic-park-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "easy",
+      "prompt": "In what year was 'Jurassic Park' released?",
+      "choices": ["1991", "1993", "1995", "1997"],
+      "correctIndex": 1,
+      "source": "Universal Pictures release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-the-matrix-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "easy",
+      "prompt": "When did 'The Matrix' first premiere?",
+      "choices": ["1997", "1998", "1999", "2000"],
+      "correctIndex": 2,
+      "source": "Warner Bros. release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-titanic-awards",
+      "category": "80s/90s Movies",
+      "topic": "Awards",
+      "difficulty": "medium",
+      "prompt": "How many Academy Awards did 'Titanic' (1997) win?",
+      "choices": ["9", "10", "11", "12"],
+      "correctIndex": 2,
+      "source": "Academy Awards records",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "movies-80s-indiana-jones-character",
+      "category": "80s/90s Movies",
+      "topic": "Characters",
+      "difficulty": "easy",
+      "prompt": "What is the full name of the archaeologist known as Indiana Jones?",
+      "choices": ["Henry Walton Jones Jr.", "Jonathan Marcus Jones", "William Henry Jones", "George Indiana Jones"],
+      "correctIndex": 0,
+      "source": "Lucasfilm canon",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-80s-ghostbusters-stay-puft",
+      "category": "80s/90s Movies",
+      "topic": "Characters",
+      "difficulty": "medium",
+      "prompt": "In 'Ghostbusters' (1984), what giant creature threatens New York City?",
+      "choices": ["King Kong", "Stay Puft Marshmallow Man", "Godzilla", "A giant Slimer"],
+      "correctIndex": 1,
+      "source": "Columbia Pictures story",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "movies-90s-fight-club-director",
+      "category": "80s/90s Movies",
+      "topic": "Directors",
+      "difficulty": "medium",
+      "prompt": "Who directed 'Fight Club' (1999)?",
+      "choices": ["David Fincher", "Quentin Tarantino", "Guy Ritchie", "Bryan Singer"],
+      "correctIndex": 0,
+      "source": "20th Century Fox credits",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-pulp-fiction-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "medium",
+      "prompt": "What year was 'Pulp Fiction' released?",
+      "choices": ["1992", "1993", "1994", "1995"],
+      "correctIndex": 2,
+      "source": "Miramax release history",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-neo-actor",
+      "category": "80s/90s Movies",
+      "topic": "Characters",
+      "difficulty": "easy",
+      "prompt": "Who plays Neo in 'The Matrix'?",
+      "choices": ["Keanu Reeves", "Laurence Fishburne", "Johnny Depp", "Brad Pitt"],
+      "correctIndex": 0,
+      "source": "Warner Bros. cast",
+      "media": {"image": null, "audio": null}
+    },
+
+    {
+      "id": "movies-80s-the-shining-quote",
+      "category": "80s/90s Movies",
+      "topic": "Characters",
+      "difficulty": "hard",
+      "prompt": "Which film features the line 'Here's Johnny!'?",
+      "choices": ["The Shining", "Scarface", "Die Hard", "The Thing"],
+      "correctIndex": 0,
+      "source": "Warner Bros. notable quotes",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-shawshank-director",
+      "category": "80s/90s Movies",
+      "topic": "Directors",
+      "difficulty": "hard",
+      "prompt": "Who directed 'The Shawshank Redemption' (1994)?",
+      "choices": ["Frank Darabont", "Ron Howard", "Steven Spielberg", "Robert Zemeckis"],
+      "correctIndex": 0,
+      "source": "Columbia Pictures credits",
+      "media": {"image": null, "audio": null}
+    },
+    {
+      "id": "movies-90s-goodfellas-year",
+      "category": "80s/90s Movies",
+      "topic": "Release Years",
+      "difficulty": "hard",
+      "prompt": "What year was 'Goodfellas' released?",
+      "choices": ["1989", "1990", "1991", "1992"],
+      "correctIndex": 1,
+      "source": "Warner Bros. release history",
+      "media": {"image": null, "audio": null}
+    }
+  ]
+}

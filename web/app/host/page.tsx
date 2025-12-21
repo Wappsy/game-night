@@ -34,6 +34,9 @@ export default function HostPage() {
           <span style={{ fontWeight: 600, color: 'var(--text)' }}>Category</span>
           <select value={category} onChange={e => setCategory(e.target.value)}>
             <option>80s Pop Culture</option>
+            <option>80s/90s Movies</option>
+            <option>Famous Movie Quotes</option>
+            <option>90s Pop Culture</option>
           </select>
         </label>
 

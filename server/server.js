@@ -33,7 +33,17 @@ function generateCode() {
 const defaultRoundConfig = { questions: 10, timerSec: 20 };
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const questionFile = path.join(__dirname, 'data', '80s-pop-culture.json');
+// Map human-readable categories to dataset files
+const CATEGORY_FILES = {
+  '80s Pop Culture': path.join(__dirname, 'data', '80s-pop-culture.json'),
+  "80s/90s Movies": path.join(__dirname, 'data', '80s-90s-movies.json'),
+  'Famous Movie Quotes': path.join(__dirname, 'data', 'famous-movie-quotes.json'),
+  '90s Pop Culture': path.join(__dirname, 'data', '90s-pop-culture.json'),
+};
+
+function getQuestionFile(category) {
+  return CATEGORY_FILES[category] || CATEGORY_FILES['80s Pop Culture'];
+}
 
 async function persistSession(code, session) {
   try {
@@ -186,7 +196,7 @@ app.post('/api/sessions/:code/start', async (req, res) => {
   // Load a random question from dataset
   let question = null;
   try {
-    const raw = fs.readFileSync(questionFile, 'utf-8');
+    const raw = fs.readFileSync(getQuestionFile(session.category), 'utf-8');
     const json = JSON.parse(raw);
     const list = json.questions || [];
     if (list.length > 0) {
@@ -223,7 +233,7 @@ app.post('/api/sessions/:code/round/next', async (req, res) => {
   }
   let question = null;
   try {
-    const raw = fs.readFileSync(questionFile, 'utf-8');
+    const raw = fs.readFileSync(getQuestionFile(session.category), 'utf-8');
     const json = JSON.parse(raw);
     const list = json.questions || [];
     if (list.length > 0) {
