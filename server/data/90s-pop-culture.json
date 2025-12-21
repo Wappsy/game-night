@@ -2,9 +2,20 @@
   "meta": {
     "category": "90s Pop Culture",
     "version": "0.1.0",
-    "total": 24,
-    "topics": ["Movies", "Music", "TV", "Tech", "Sports", "Fashion"],
-    "difficulty": ["easy", "medium", "hard"]
+    "total": 200,
+    "topics": [
+      "Movies",
+      "Music",
+      "TV",
+      "Tech",
+      "Sports",
+      "Fashion"
+    ],
+    "difficulty": [
+      "easy",
+      "medium",
+      "hard"
+    ]
   },
   "questions": [
     {
@@ -13,10 +24,18 @@
       "topic": "Movies",
       "difficulty": "easy",
       "prompt": "In what year was 'Titanic' released?",
-      "choices": ["1995", "1996", "1997", "1998"],
+      "choices": [
+        "1995",
+        "1996",
+        "1997",
+        "1998"
+      ],
       "correctIndex": 2,
       "source": "Paramount/20th Century Fox release history",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-Movies-the-matrix-directors",
@@ -24,22 +43,37 @@
       "topic": "Movies",
       "difficulty": "medium",
       "prompt": "Who directed 'The Matrix' (1999)?",
-      "choices": ["The Wachowskis", "James Cameron", "Ridley Scott", "Christopher Nolan"],
+      "choices": [
+        "The Wachowskis",
+        "James Cameron",
+        "Ridley Scott",
+        "Christopher Nolan"
+      ],
       "correctIndex": 0,
       "source": "Warner Bros. credits",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
-
     {
       "id": "90s-Music-spice-girls-debut-single",
       "category": "90s Pop Culture",
       "topic": "Music",
       "difficulty": "easy",
       "prompt": "What was the Spice Girls' debut single?",
-      "choices": ["Say You'll Be There", "Wannabe", "2 Become 1", "Spice Up Your Life"],
+      "choices": [
+        "Say You'll Be There",
+        "Wannabe",
+        "2 Become 1",
+        "Spice Up Your Life"
+      ],
       "correctIndex": 1,
       "source": "Virgin Records release history",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-Music-nirvana-nevermind-year",
@@ -47,22 +81,37 @@
       "topic": "Music",
       "difficulty": "medium",
       "prompt": "Nirvana's album 'Nevermind' was released in which year?",
-      "choices": ["1990", "1991", "1992", "1993"],
+      "choices": [
+        "1990",
+        "1991",
+        "1992",
+        "1993"
+      ],
       "correctIndex": 1,
       "source": "DGC Records release history",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
-
     {
       "id": "90s-TV-friends-premiere-year",
       "category": "90s Pop Culture",
       "topic": "TV",
       "difficulty": "easy",
       "prompt": "In what year did 'Friends' first premiere?",
-      "choices": ["1992", "1993", "1994", "1995"],
+      "choices": [
+        "1992",
+        "1993",
+        "1994",
+        "1995"
+      ],
       "correctIndex": 2,
       "source": "NBC broadcast archives",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-TV-the-x-files-leads",
@@ -70,22 +119,37 @@
       "topic": "TV",
       "difficulty": "medium",
       "prompt": "Who are the two FBI agents leading 'The X-Files'?",
-      "choices": ["Mulder & Scully", "Krycek & Skinner", "Doggett & Reyes", "Riggs & Murtaugh"],
+      "choices": [
+        "Mulder & Scully",
+        "Krycek & Skinner",
+        "Doggett & Reyes",
+        "Riggs & Murtaugh"
+      ],
       "correctIndex": 0,
       "source": "Fox series cast",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
-
     {
       "id": "90s-Tech-nokia-3310-release",
       "category": "90s Pop Culture",
       "topic": "Tech",
       "difficulty": "easy",
       "prompt": "The Nokia 3310 was released around what year?",
-      "choices": ["1998", "1999", "2000", "2001"],
+      "choices": [
+        "1998",
+        "1999",
+        "2000",
+        "2001"
+      ],
       "correctIndex": 2,
       "source": "Nokia device history",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-Tech-windows-95-launch",
@@ -93,22 +157,37 @@
       "topic": "Tech",
       "difficulty": "medium",
       "prompt": "Microsoft launched Windows 95 in which year?",
-      "choices": ["1993", "1994", "1995", "1996"],
+      "choices": [
+        "1993",
+        "1994",
+        "1995",
+        "1996"
+      ],
       "correctIndex": 2,
       "source": "Microsoft product timeline",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
-
     {
       "id": "90s-Sports-chicago-bulls-championships-1991-1998",
       "category": "90s Pop Culture",
       "topic": "Sports",
       "difficulty": "medium",
       "prompt": "How many NBA championships did the Chicago Bulls win from 1991 to 1998?",
-      "choices": ["4", "5", "6", "7"],
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
       "correctIndex": 2,
       "source": "NBA records",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-Sports-world-cup-1998-winner",
@@ -116,22 +195,37 @@
       "topic": "Sports",
       "difficulty": "easy",
       "prompt": "Which country won the 1998 FIFA World Cup?",
-      "choices": ["Brazil", "France", "Germany", "Argentina"],
+      "choices": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Argentina"
+      ],
       "correctIndex": 1,
       "source": "FIFA World Cup records",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
-
     {
       "id": "90s-Fashion-flannel-grunge-trend",
       "category": "90s Pop Culture",
       "topic": "Fashion",
       "difficulty": "easy",
       "prompt": "Which fashion item became synonymous with the 90s grunge movement?",
-      "choices": ["Flannel shirts", "Bell bottoms", "Polo shirts", "Leather jackets"],
+      "choices": [
+        "Flannel shirts",
+        "Bell bottoms",
+        "Polo shirts",
+        "Leather jackets"
+      ],
       "correctIndex": 0,
       "source": "Fashion retrospectives",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
     },
     {
       "id": "90s-Fashion-platform-shoes-trend",
@@ -139,10 +233,3590 @@
       "topic": "Fashion",
       "difficulty": "medium",
       "prompt": "Which footwear trend surged in popularity in the late 90s?",
-      "choices": ["Platform shoes", "Stilettos", "Wedges", "Clogs"],
+      "choices": [
+        "Platform shoes",
+        "Stilettos",
+        "Wedges",
+        "Clogs"
+      ],
       "correctIndex": 0,
       "source": "Fashion retrospectives",
-      "media": {"image": null, "audio": null}
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-13",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 13 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-14",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 14 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-15",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 15 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-16",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 16 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-17",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 17 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-18",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 18 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-19",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 19 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-20",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 20 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-21",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 21 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-22",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 22 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-23",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 23 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-24",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 24 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-25",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 25 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-26",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 26 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-27",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 27 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-28",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 28 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-29",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 29 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-30",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 30 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-31",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 31 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-32",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 32 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-33",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 33 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-34",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 34 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-35",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 35 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-36",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 36 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-37",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 37 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-38",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 38 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-39",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 39 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-40",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 40 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-41",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 41 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-42",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 42 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-43",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 43 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-44",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 44 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-45",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 45 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-46",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 46 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-47",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 47 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-48",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 48 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-49",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 49 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-50",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 50 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-51",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 51 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-52",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 52 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-53",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 53 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-54",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 54 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-55",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 55 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-56",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 56 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-57",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 57 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-58",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 58 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-59",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 59 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-60",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 60 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-61",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 61 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-62",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 62 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-63",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 63 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-64",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 64 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-65",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 65 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-66",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 66 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-67",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 67 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-68",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 68 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-69",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 69 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-70",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 70 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-71",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 71 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-72",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 72 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-73",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 73 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-74",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 74 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-75",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 75 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-76",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 76 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-77",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 77 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-78",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 78 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-79",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 79 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-80",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 80 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-81",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 81 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-82",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 82 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-83",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 83 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-84",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 84 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-85",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 85 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-86",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 86 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-87",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 87 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-88",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 88 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-89",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 89 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-90",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 90 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-91",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 91 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-92",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 92 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-93",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 93 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-94",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 94 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-95",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 95 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-96",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 96 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-97",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 97 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-98",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 98 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-99",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 99 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-100",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 100 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-101",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 101 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-102",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 102 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-103",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 103 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-104",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 104 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-105",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 105 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-106",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 106 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-107",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 107 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-108",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 108 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-109",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 109 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-110",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 110 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-111",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 111 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-112",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 112 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-113",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 113 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-114",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 114 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-115",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 115 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-116",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 116 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-117",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 117 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-118",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 118 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-119",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 119 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-120",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 120 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-121",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 121 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-122",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 122 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-123",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 123 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-124",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 124 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-125",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 125 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-126",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 126 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-127",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 127 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-128",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 128 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-129",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 129 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-130",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 130 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-131",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 131 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-132",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 132 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-133",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 133 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-134",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 134 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-135",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 135 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-136",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 136 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-137",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 137 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-138",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 138 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-139",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 139 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-140",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 140 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-141",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 141 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-142",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 142 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-143",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 143 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-144",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 144 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-145",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 145 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-146",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 146 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-147",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 147 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-148",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 148 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-149",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 149 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-150",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 150 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-151",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 151 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-152",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 152 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-153",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 153 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-154",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 154 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-155",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 155 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-156",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 156 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-157",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 157 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-158",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 158 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-159",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 159 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-160",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 160 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-161",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 161 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-162",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 162 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-163",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 163 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-164",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 164 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-165",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 165 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-166",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 166 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-167",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 167 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-168",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 168 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-169",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 169 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-170",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 170 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-171",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 171 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-172",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 172 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-173",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 173 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-174",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 174 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-175",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 175 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-176",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 176 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-177",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 177 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-178",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 178 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-179",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 179 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-180",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 180 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-181",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 181 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-182",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 182 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-183",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 183 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-184",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 184 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-185",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 185 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-186",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 186 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-187",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 187 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-188",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 188 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-189",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 189 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-190",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 190 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-191",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 191 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-192",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 192 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-193",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 193 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-194",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 194 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-195",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 195 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-196",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 196 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-197",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 197 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 0,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-198",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "hard",
+      "prompt": "Placeholder question 198 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 1,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-199",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "easy",
+      "prompt": "Placeholder question 199 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 2,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
+    },
+    {
+      "id": "90s-pop-placeholder-200",
+      "category": "90s Pop Culture",
+      "topic": "General",
+      "difficulty": "medium",
+      "prompt": "Placeholder question 200 for 90s Pop Culture",
+      "choices": [
+        "Choice A",
+        "Choice B",
+        "Choice C",
+        "Choice D"
+      ],
+      "correctIndex": 3,
+      "source": "placeholder",
+      "media": {
+        "image": null,
+        "audio": null
+      }
     }
   ]
 }
